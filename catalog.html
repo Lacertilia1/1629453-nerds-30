@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+
+    <header>
+        <nav>
+          <a href="index.html">
+            <img src="img/nerds-logo.svg" width="160" height="66" alt="Логотип компании NERDS">
+          </a>
+          <ul>
+            <li><a href="blank.html">Студия</a></li>
+            <li><a href="blank.html">Клиенты</a></li>
+            <li><a href="catalog.html">Магазин</a></li>
+            <li><a href="blank.html">Контакты</a></li>
+          </ul>
+          <a href="blank.html">Корзина</a>
+        </nav> 
+       </header>
+
+    <main>
+      <h1>Магазин готовых шаблонов</h1>
+
+      <section>
+        <h2>Фильтр товаров</h2>
+        <form method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legend>Стоимость</legend>
+              <ul>
+                  <li>
+                      <input type="range" min="0" max="15000" step="100" value="12000">
+                  </li>
+                  <li>
+                      <label for="starting-point">От</label>
+                      <input id="starting-point" type="number" name="start" placeholder="0">
+                  </li>
+                  <li>
+                    <label for="ending-point">От</label>
+                    <input id="ending-point" type="number" name="end" placeholder="15000">
+                  </li>
+              </ul>
+                <!-- input type range с кнопками-->
+            </fieldset>
+            <fieldset>
+              <legend>Сетка</legend>
+              <ul>
+                <li>
+                  <input type="radio" name="product-type" value="adaptive" id="filter-adaptive" checked>
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li>
+                  <input type="radio" name="product-type" value="fix" id="filter-fix">
+                  <label for="filter-fix">Фиксированная</label>
+                </li>
+                <li>
+                  <input type="radio" name="product-type" value="rubber" id="filter-rubber">
+                  <label for="filter-rubber">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Особенности</legend>
+              <ul>
+                <li>
+                  <input type="checkbox" name="slider" id="filter-slider" checked>
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="block" id="filter-block">
+                  <label for="filter-block">Блок преимуществ</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="news" id="filter-news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="gallery" id="filter-gallery">
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="basket" id="filter-basket">
+                  <label for="filter-basket">Корзина</label>
+                </li>
+              <ul>
+            </fieldset>
+            <button type="submit">Показать</button>
+          </form>
+      </section>
+
+      <section>
+          <h2>Каталог товаров</h2>
+          <ul>
+              <li>
+                <p>
+                      <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Сайт Седона">
+                 </p>
+                 <h3><a href="#">Sedona</a></h3>
+                 <p>Информационный сайт<br> для туристов</p>
+                 <button type="button">9 900 Р</button>
+              </li>
+              <li>
+                <p>
+                    <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Сайт Пинг">
+                </p>
+                <h3><a href="#">Pink App</a></h3>
+                <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
+                <button type="button">9 900 Р</button>
+              </li>
+              <li>
+                <p>
+                    <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Сайт Бородинский">
+                </p>
+                <h3><a href="#">Barbershop</a></h3>
+                <p>Сайт салона красоты.<br> Для мужчин, да.</p>
+                <button type="button">9 900 Р</button>
+              </li>
+              <li>
+                <p>
+                    <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Mishka">
+                </p>
+                <h3><a href="#">Mishka</a></h3>
+                <p>Интернет-магазин<br> вязанных игрушек</p>
+                <button type="button">9 900 Р</button>
+              </li>
+              <li>
+                <p>
+                    <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Сайт А Плюс">
+                </p>
+                <h3><a href="#">A Plus</a></h3>
+                <p>Лендинг курсов повышения<br> квалификации</p>
+                <button type="button">9 900 Р</button>
+              </li>
+              <li>
+                <p>
+                    <img src="https://via.placeholder.com/358x578" width="358" height="578" alt="Сайт Кваст">
+                </p>
+                <h3><a href="#">Кваст</a></h3>
+                <p>Промо-сайт производителя<br> крафтового кваса</p>
+                <button type="button">9 900 Р</button>
+              </li>
+          </ul>
+          <ul>
+            <li>
+              <a>1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li>
+              <a href="#">Следующая</a>
+            </li>
+          </ul>
+      </section>
+
+    </main> 
+    
+    <footer>
+        <section>
+          <h2>Контактная информация</h2>
+          <p><b>Nёrds design studio</b></p>
+          <p>191186, Санкт-Петербург,<br> улица Б.Конюшенная, д. 19/8</p>
+          <p>тел. <a href="tel:+78122857575">+7(812)285-75-75</a></p>
+          <a href="blank.html">Напишите нам</a>
+          <!--Здесь будет карта-->>
+        </section>
+  
+        <section>
+          <h2>Социальные сети</h2>
+          <ul>
+            <li>
+              <a href="#">Вконтакте</a>
+            </li>
+            <li>
+              <a href="#">Фейсбук</a>
+            </li>
+            <li>
+              <a href="#">Инстаграм</a>
+            </li>
+          </ul>
+          <p><b>Давайте дружить, это выгодно!</b></p>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </section>
+      </footer>
+
+  </body>
+</html>

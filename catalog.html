@@ -92,11 +92,13 @@
       <section>
           <h2>Каталог товаров</h2>
           <p><b>Сортировать:</b></p>
-          <button type="button">По цене</button>
-          <button type="button">По типу</button>
-          <button type="button">По названию</button>
-          <button><img src="https://via.placeholder.com/11x10" width="11" height="10" alt="Сортировать снизу"></button>
-          <button><img src="https://via.placeholder.com/11x10" width="11" height="10" alt="Сортировать сверху"></button>
+          <div>
+            <button type="button">По цене</button>
+            <button type="button">По типу</button>
+            <button type="button">По названию</button>
+            <button><img src="https://via.placeholder.com/11x10" width="11" height="10" alt="Сортировать снизу"></button>
+            <button><img src="https://via.placeholder.com/11x10" width="11" height="10" alt="Сортировать сверху"></button>
+          </div>
           <ul>
               <li>
                 <p>
@@ -159,49 +161,59 @@
                 </div>
               </li>
           </ul>
-          <ul>
-            <li>
-              <a>1</a>
-            </li>
-            <li>
-              <a href="#">2</a>
-            </li>
-            <li>
-              <a href="#">3</a>
-            </li>
-            <li>
-              <a href="#">Следующая</a>
-            </li>
-          </ul>
+
+          <div class="pagination">
+            <ul>
+              <li>
+                <a>1</a>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+              <li>
+                <a href="#">Следующая</a>
+              </li>
+            </ul>
+          </div>  
       </section>
 
     </main> 
     
     <footer>
         <section>
-          <h2>Контактная информация</h2>
-          <p><b>Nёrds design studio</b></p>
-          <p>191186, Санкт-Петербург,<br> улица Б.Конюшенная, д. 19/8</p>
-          <p>тел. <a href="tel:+78122857575">+7(812)285-75-75</a></p>
-          <a href="#">Напишите нам</a>
+          <div>
+            <h2>Контактная информация</h2>
+            <p><b>Nёrds design studio</b></p>
+            <p>191186, Санкт-Петербург,<br> улица Б.Конюшенная, д. 19/8</p>
+            <p>тел. <a href="tel:+78122857575">+7(812)285-75-75</a></p>
+            <a href="#">Напишите нам</a>
+          </div>
           <!--Здесь будет карта-->
         </section>
   
         <section>
           <h2>Социальные сети</h2>
-          <ul>
-            <li>
-              <a href="#">Вконтакте</a>
-            </li>
-            <li>
-              <a href="#">Фейсбук</a>
-            </li>
-            <li>
-              <a href="#">Инстаграм</a>
-            </li>
-          </ul>
-          <p><b>Давайте дружить, это выгодно!</b></p>
-          <p>Скидка 10% для друзей из социальных сетей.</p>
+            <div class="social-pages">
+              <ul>
+                <li>
+                  <a href="#">Вконтакте</a>
+                </li>
+                <li>
+                  <a href="#">Фейсбук</a>
+                </li>
+                <li>
+                  <a href="#">Инстаграм</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="discount">
+              <p><b>Давайте дружить, это выгодно!</b></p>
+              <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
         </section>
       </footer>
 

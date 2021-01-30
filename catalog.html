@@ -38,82 +38,83 @@
 
     <section class="product-filter">
       <h2 class="hidden">Фильтр товаров</h2>
-      <form method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
-          <legend>Стоимость</legend>
+      <form class="product-filter-form" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="product-filter-name">
+          <legend class="product-filter-cost-legend">Стоимость</legend>
+
+          <!-- input type="range" с кнопками-->
           <ul>
-            <!-- input type range с кнопками-->
             <li>
-              <input type="range" min="0" max="15000" step="100" value="12000">
+              <input class="filter-range" type="range" min="0" max="15000" step="100" value="12000">
             </li>
             <li>
               <label for="starting-point">От</label>
-              <input id="starting-point" type="number" name="start" placeholder="0">
+              <input class="filter-range-start" id="starting-point" type="number" name="start" placeholder="0">
             </li>
             <li>
-              <label for="ending-point">От</label>
-              <input id="ending-point" type="number" name="end" placeholder="15000">
+              <label for="ending-point">До</label>
+              <input class="filter-range-end" id="ending-point" type="number" name="end" placeholder="15000">
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend>Сетка</legend>
+        <fieldset class="product-filter-name">
+          <legend class="product-filter-cost-legend">Сетка</legend>
           <ul>
             <li>
-              <input type="radio" name="product-type" value="adaptive" id="filter-adaptive" checked>
+              <input class="product-filter-radio-button" type="radio" name="product-type" value="adaptive" id="filter-adaptive" checked>
               <label for="filter-adaptive">Адаптивная</label>
             </li>
             <li>
-              <input type="radio" name="product-type" value="fix" id="filter-fix">
+              <input class="product-filter-radio-button" type="radio" name="product-type" value="fix" id="filter-fix">
               <label for="filter-fix">Фиксированная</label>
             </li>
             <li>
-              <input type="radio" name="product-type" value="rubber" id="filter-rubber">
+              <input class="product-filter-radio-button" type="radio" name="product-type" value="rubber" id="filter-rubber">
               <label for="filter-rubber">Резиновая</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset>
-          <legend>Особенности</legend>
+        <fieldset class="product-filter-name">
+          <legend class="product-filter-cost-legend">Особенности</legend>
           <ul>
             <li>
-              <input type="checkbox" name="slider" id="filter-slider" checked>
+              <input class="product-filter-radio-checkbox"type="checkbox" name="slider" id="filter-slider" checked>
               <label for="filter-slider">Слайдер</label>
             </li>
             <li>
-              <input type="checkbox" name="block" id="filter-block">
+              <input class="product-filter-radio-checkbox" type="checkbox" name="block" id="filter-block">
               <label for="filter-block">Блок преимуществ</label>
             </li>
             <li>
-              <input type="checkbox" name="news" id="filter-news" checked>
+              <input class="product-filter-radio-checkbox" type="checkbox" name="news" id="filter-news" checked>
               <label for="filter-news">Новости</label>
             </li>
             <li>
-              <input type="checkbox" name="gallery" id="filter-gallery">
+              <input class="product-filter-radio-checkbox" type="checkbox" name="gallery" id="filter-gallery">
               <label for="filter-gallery">Галерея</label>
             </li>
             <li>
-              <input type="checkbox" name="basket" id="filter-basket">
+              <input class="product-filter-radio-checkbox" type="checkbox" name="basket" id="filter-basket">
               <label for="filter-basket">Корзина</label>
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button class="button catalog-button" type="submit">Показать</button>
       </form>
     </section>
 
-    <section>
+    <section class="product-catalog">
       <h2 class="hidden">Каталог товаров</h2>
       <p>Сортировать:</p>
-      <div>
-        <button type="button">По цене</button>
-        <button type="button">По типу</button>
-        <button type="button">По названию</button>
-        <button><img src="img/img-for-catalog/arrow-down.svg" width="11" height="10" alt="Сортировать снизу"></button>
-        <button><img src="img/img-for-catalog/arrow-up.svg" width="11" height="10" alt="Сортировать сверху"></button>
+      <div class="product-catalog-sort">
+        <button class="catalog-sort-button active-sort-button" type="button">По цене</button>
+        <button class="catalog-sort-button" type="button">По типу</button>
+        <button class="catalog-sort-button" type="button">По названию</button>
+        <button class="catalog-sort-button-image down-direction active-button-image"><img src="img/img-for-catalog/arrow-down.svg" width="11" height="10" alt="Сортировать снизу"></button>
+        <button class="catalog-sort-button-image up-direction"><img src="img/img-for-catalog/arrow-up.svg" width="11" height="10" alt="Сортировать сверху"></button>
       </div>
-      <ul>
-        <li>
+      <ul class="product-list">
+        <li class="product-list-item">
           <p>
             <img src="img/img-for-catalog/img-sedona.jpg" width="358" height="578"
               alt="Фотография потрясающего каньона, находящегося рядом с городом Седона в Аризоне.">
@@ -121,10 +122,10 @@
           <div>
             <h3><a href="#">Sedona</a></h3>
             <p>Информационный сайт<br> для туристов</p>
-            <button type="button">9 900 Р</button>
+            <button class="button" type="button">9 900 Р</button>
           </div>
         </li>
-        <li>
+        <li class="product-list-item">
           <p>
             <img src="img/img-for-catalog/img-pink.jpg" width="358" height="578"
               alt="Рука человека, которая держит смартфон.">
@@ -132,10 +133,10 @@
           <div>
             <h3><a href="#">Pink App</a></h3>
             <p>Продуктовый лендинг<br> приложения для iOS и Android</p>
-            <button type="button">9 900 Р</button>
+            <button class="button" type="button">9 900 Р</button>
           </div>
         </li>
-        <li>
+        <li class="product-list-item">
           <p>
             <img src="img/img-for-catalog/img-barbershop.jpg" width="358" height="578"
               alt="Фотография помещения барбершопа Бородинский со стулом на главном фоне.">
@@ -143,10 +144,10 @@
           <div>
             <h3><a href="#">Barbershop</a></h3>
             <p>Сайт салона красоты.<br> Для мужчин, да.</p>
-            <button type="button">9 900 Р</button>
+            <button class="button" type="button">9 900 Р</button>
           </div>
         </li>
-        <li>
+        <li class="product-list-item">
           <p>
             <img src="img/img-for-catalog/img-mishka.jpg" width="358" height="578"
               alt="Фотография вязанных плюшевых игрушек, лежащих на полке.">
@@ -154,10 +155,10 @@
           <div>
             <h3><a href="#">Mishka</a></h3>
             <p>Интернет-магазин<br> вязанных игрушек</p>
-            <button type="button">9 900 Р</button>
+            <button class="button" type="button">9 900 Р</button>
           </div>
         </li>
-        <li>
+        <li class="product-list-item">
           <p>
             <img src="img/img-for-catalog/img-aplus.jpg" width="358" height="578"
               alt="Стильная фотография смартфона и подставки для карандашей в форме руки.">
@@ -165,10 +166,10 @@
           <div>
             <h3><a href="#">A Plus</a></h3>
             <p>Лендинг курсов повышения<br> квалификации</p>
-            <button type="button">9 900 Р</button>
+            <button class="button" type="button">9 900 Р</button>
           </div>
         </li>
-        <li>
+        <li class="product-list-item">
           <p>
             <img src="img/img-for-catalog/img-kvast.jpg" width="358" height="578"
               alt="Слоган компании Кваст на фоне пшеницы.">
@@ -176,7 +177,7 @@
           <div>
             <h3><a href="#">Кваст</a></h3>
             <p>Промо-сайт производителя<br> крафтового кваса</p>
-            <button type="button">9 900 Р</button>
+            <button class="button" type="button">9 900 Р</button>
           </div>
         </li>
       </ul>
@@ -184,16 +185,16 @@
       <div class="pagination">
         <ul>
           <li>
-            <a>1</a>
+            <a class="button catalog-button active-button">1</a>
           </li>
           <li>
-            <a href="#">2</a>
+            <a class="button catalog-button" href="#">2</a>
           </li>
           <li>
-            <a href="#">3</a>
+            <a class="button catalog-button" href="#">3</a>
           </li>
           <li>
-            <a href="#">Следующая</a>
+            <a class="button catalog-button" href="#">Следующая</a>
           </li>
         </ul>
       </div>

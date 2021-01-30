@@ -16,18 +16,18 @@
   <header class="main-header">
     <nav class="main-navigation">
       <a class="main-header-logo" href="index.html">
-        <img src="img/img-for-index/nerds-logo.svg" width="160" height="66" alt="Логотип компании NERDS">
+        <img class="main-header-logo-image" src="img/img-for-index/nerds-logo.svg" width="160" height="66" alt="Логотип компании NERDS">
       </a>
-      <ul class="main-navigation">
-        <li><a href="#">Студия</a></li>
-        <li><a href="#">Клиенты</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="#">Контакты</a></li>
+      <ul class="site-navigation-list">
+        <li><a class="site-navigation-link" href="#">Студия</a></li>
+        <li><a class="site-navigation-link" href="#">Клиенты</a></li>
+        <li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
+        <li><a class="site-navigation-link" href="#">Контакты</a></li>
       </ul>
       <div>
-        <a class="login-link" href="#">
-          <img src="img/img-for-index/cart-icon.svg" width="15" height="15" alt="">
-          <p>Корзина</p>
+        <a class="cart-link" href="#">
+          <img class="cart-link-image" src="img/img-for-index/cart-icon.svg" width="15" height="15" alt="">
+          <p class="cart-link-text">Корзина</p>
         </a>
       </div>
     </nav>
@@ -36,8 +36,8 @@
   <main class="container">
     <h1>Магазин готовых шаблонов</h1>
 
-    <section>
-      <h2>Фильтр товаров</h2>
+    <section class="product-filter">
+      <h2 class="hidden">Фильтр товаров</h2>
       <form method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Стоимость</legend>
@@ -103,7 +103,7 @@
     </section>
 
     <section>
-      <h2>Каталог товаров</h2>
+      <h2 class="hidden">Каталог товаров</h2>
       <p>Сортировать:</p>
       <div>
         <button type="button">По цене</button>
@@ -201,50 +201,73 @@
 
   </main>
 
-  <footer>
-    <section>
-      <div>
-        <h2>Контактная информация</h2>
+  <footer class="main-footer">
+    <section class="main-footer-contacts">
+      <div class="main-footer-contacts-adress">
+        <h2 class="hidden">Контактная информация</h2>
         <p>Nёrds design studio</p>
         <p>191186, Санкт-Петербург,<br> улица Б.Конюшенная, д. 19/8</p>
-        <p>тел. <a href="tel:+78122857575">+7(812)285-75-75</a></p>
-        <a href="#">Напишите нам</a>
+        <p>тел. <a class="contacts-phone" href="tel:+78122857575">+7(812)285-75-75</a></p>
+        <a class="button" href="#">Напишите нам</a>
       </div>
 
-      <div>
+      <div class="main-footer-contacts-map">
         <!--Здесь будет карта-->
-        <img class="" src="img/img-for-index/map-marker.png" width="231" height="190" alt="">
+        <img class="contacts-map-marker-image" src="img/img-for-index/map-marker.png" width="231" height="190" alt="">
       </div>
     </section>
 
-    <section>
-      <h2>Социальные сети</h2>
-      <div class="social-pages">
-        <ul>
-          <li>
+    <section class="main-footer-socials">
+      <h2 class="hidden">Социальные сети</h2>
+      <div class="main-footer-socials">
+        <ul class="main-footer-socials-list">
+          <li class="main-footer-socials-item">
             <a href="#">
-              <img src="img/img-for-index/vk-icon.svg" width="26" height="15" alt="Иконка Вконтакте.">
+              <img class="main-footer-socials-item-first-image" src="img/img-for-index/vk-icon.svg" width="26" height="15" alt="Иконка Вконтакте.">
             </a>
           </li>
-          <li>
+          <li class="main-footer-socials-item">
             <a href="#">
-              <img src="img/img-for-index/fb-icon.svg" width="12" height="22" alt="Иконка Фейсбук.">
+              <img class="main-footer-socials-item-second-image" src="img/img-for-index/fb-icon.svg" width="12" height="22" alt="Иконка Фейсбук.">
             </a>
           </li>
-          <li>
+          <li class="main-footer-socials-item">
             <a href="#">
-              <img src="img/img-for-index/insta-icon.svg" width="21" height="21" alt="Иконка Инстаграм.">
+              <img class="main-footer-socials-item-third-image" src="img/img-for-index/insta-icon.svg" width="21" height="21" alt="Иконка Инстаграм.">
             </a>
           </li>
         </ul>
       </div>
 
-      <div class="discount">
+      <div class="main-footer-discount">
         <p>Давайте дружить, это выгодно!</p>
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </section>
   </footer>
+
+
+   <!-- Всплывающее окно Pop-up
+    <section class="popup">
+      <h2>Напишите нам</h2>
+      <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
+        <label for="firstname">Ваше имя:</label>
+        <input class="popup-form-name" id="firstname" type="text" name="firstname" placeholder="Имя Фамилия">
+
+        <label for="email">Ваш email:</label>
+        <input class="popup-form-mail" id="email" type="email" name="email" placeholder="email@example.com">
+
+        <p class="popup-form-text">
+          <label for="message">Текст письма:</label><br>
+          <input class="popup-form-text-input" id="message" type="text" name="message" placeholder="В свободной форме">
+        </p>
+
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="button-close" type="button">Закрыть</button>
+    </section>
+  -->
+
 
 </body>
 

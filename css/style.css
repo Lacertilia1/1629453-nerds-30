@@ -23,7 +23,6 @@
   --slider: #c1c1c1;
   --map-background: #eae6dd;
 
-
   /*  Цвета по секциям */
   /* INDEX.HTML */
   /* Header */
@@ -133,7 +132,7 @@ img {
 }
 
 .site-navigation-link,
-.cart-link-text  {
+.cart-link-text {
   text-transform: uppercase;
   color: var(--basic-black);
 }
@@ -296,7 +295,7 @@ img {
 
 /* Footer */
 
-.footer-contacts-subtitle{
+.footer-contacts-subtitle {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -344,7 +343,6 @@ img {
   background-color: var(--basic-red-extra-dark);
 }
 
-
 /* Modal */
 
 .popup-heading {
@@ -360,7 +358,7 @@ img {
   color: var(--basic-black);
 }
 
-.popup-item input{
+.popup-item input {
   font: inherit;
   border: 2px solid var(--basic-white-dark);
   border-radius: 3px;
@@ -377,5 +375,3 @@ img {
 .popup-item input:invalid {
   border: 2px solid var(-basic-red-dark);
 }
-
-

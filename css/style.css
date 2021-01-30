@@ -1,0 +1,95 @@
+/* Variables */
+
+:root {
+  /* Special */
+  --basic-red: #fb565a;
+  --basic-green: #00ca74;
+  --basic-yellow: #efc849;
+
+  /* Shades of white */
+  --basic-white: #ffffff;
+  --basic-white-dark: #d7dcde;
+  --basic-white-neutral: #eeeeee;
+  --basic-white-light: #dbdbdb;
+  --basic-white-extra-light: #e1e1e1;
+
+  /* Shades of black */
+  --basic-black: #000000;
+  --basic-black-extra-dark: #283136;
+  --basic-black-dark: #444444;
+  --basic-black-neutral: #4d4d4d;
+  --basic-black-light: #666666;
+  --basic-black-extra-light: #a6a6a6;
+  --slider: #c1c1c1;
+
+  /* INDEX.HTML */
+  /* Header */
+  --basic-white-neutral: #eeeeee;
+  --basic-black-extra-light: #a6a6a6;
+  --basic-black: #000000;
+
+  /* Slider */
+  --basic-white-neutral: #eeeeee;
+  --basic-black: #000000;
+  --basic-black-extra-dark: #283136;
+  --basic-red: #fb565a;
+
+  /* Features */
+  --basic-red: #fb565a;
+  --basic-green: #00ca74;
+  --basic-yellow: #efc849;
+  --basic-black: #000000;
+  --basic-black-extra-dark: #283136;
+
+  /* Description */
+  --basic-black: #000000;
+  --basic-black-extra-dark: #283136;
+
+  /* Footer */
+  --basic-black: #000000;
+  --basic-black-light: #666666;
+  --basic-red: #fb565a;
+  --basic-white: #ffffff;
+  --basic-white-extra-light: #e1e1e1;
+  --basic-black-dark: #444444;
+
+  /* CATALOG.HTML */
+  /* Header */
+  --basic-white-neutral: #eeeeee;
+  --basic-black-extra-light: #a6a6a6;
+  --basic-black: #000000;
+
+  /* Product-filter */
+  --range-button: #ababab;
+  --basic-black: #000000;
+  --basic-white-neutral: #eeeeee;
+  --basic-black-extra-dark: #283136;
+
+  /* Product-catalog */
+  --basic-black: #000000;
+  --basic-white-neutral: #eeeeee;
+  --basic-red: #fb565a;
+  --basic-white: #ffffff;
+
+  /* Footer */
+  --basic-black: #000000;
+  --basic-black-light: #666666;
+  --basic-red: #fb565a;
+  --basic-white: #ffffff;
+  --basic-white-extra-light: #e1e1e1;
+  --basic-black-dark: #444444;
+
+  /* hover */
+  --basic-red-dark: #e74246;
+  --basic-green-dark: #00bc6c;
+  --basic-yellow-dark: #eab534;
+  --input-grey: #b4b9bb;
+  --button-grey: #dfdfdf;
+  --basic-black-extra-dark: #283136;
+  --basic-black-neutral: #4d4d4d;
+
+  /* focus */
+  --basic-red-extra-dark: #b7373b;
+  --basic-green-extra-dark: #00aa62;
+  --basic-yellow-extra-dark: #eab534;
+}

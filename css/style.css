@@ -203,6 +203,37 @@ img {
   opacity: 0.3;
 }
 
+/* Slider-radio-buttons */
+.slider-radio-buttons-item input[type=radio] {
+  display: none;
+}
+
+.slider-radio-buttons-item label {
+  display: inline-block;
+	cursor: pointer;
+	position: relative;
+	padding-left: 25px;
+	margin-right: 0;
+	line-height: 18px;
+}
+
+.slider-radio-buttons-item label:before {
+  content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	position: absolute;
+	left: 0;
+	bottom: 1px;
+  background: url(../img/img-for-index/radio-index-off.svg) 0 0 no-repeat;
+}
+
+.slider-radio-buttons-item input[type=radio]:checked + label:before {
+  background: url(../img/img-for-index/radio-index-on.svg) 0 0 no-repeat;
+}
+
+
+
 /* Features */
 .features-list {
   list-style: none;
@@ -441,6 +472,9 @@ img {
 }
 
 /* Filter-radio-buttons */
+.filter-range-buttons {
+  margin-bottom: 10px;
+}
 
 .product-filter-radio-button[type=radio] {
   display: none;

@@ -375,3 +375,29 @@ img {
 .popup-item input:invalid {
   border: 2px solid var(-basic-red-dark);
 }
+
+
+/* CATALOG.HTML */
+
+.catalog-heading {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  color: var(--basic-black);
+  background-color: var(--basic-white-neutral);
+}
+
+.background-container {
+  background-color: var(--basic-white-neutral);
+}
+
+/* Filter */
+
+.product-filter-cost-legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: var(--basic-black);
+}
+
+

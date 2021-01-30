@@ -204,35 +204,33 @@ img {
 }
 
 /* Slider-radio-buttons */
-.slider-radio-buttons-item input[type=radio] {
+.slider-radio-buttons-item input[type="radio"] {
   display: none;
 }
 
 .slider-radio-buttons-item label {
   display: inline-block;
-	cursor: pointer;
-	position: relative;
-	padding-left: 25px;
-	margin-right: 0;
-	line-height: 18px;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-right: 0;
+  line-height: 18px;
 }
 
 .slider-radio-buttons-item label:before {
   content: "";
-	display: inline-block;
-	width: 18px;
-	height: 18px;
-	position: absolute;
-	left: 0;
-	bottom: 1px;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
   background: url(../img/img-for-index/radio-index-off.svg) 0 0 no-repeat;
 }
 
-.slider-radio-buttons-item input[type=radio]:checked + label:before {
+.slider-radio-buttons-item input[type="radio"]:checked + label:before {
   background: url(../img/img-for-index/radio-index-on.svg) 0 0 no-repeat;
 }
-
-
 
 /* Features */
 .features-list {
@@ -416,7 +414,6 @@ img {
   border: 2px solid var(-basic-red-dark);
 }
 
-
 /* CATALOG.HTML */
 
 .catalog-heading {
@@ -425,7 +422,6 @@ img {
   font-weight: 500;
   color: var(--basic-black);
   background-color: var(--basic-white-neutral);
-
 }
 
 .background-container {
@@ -476,32 +472,32 @@ img {
   margin-bottom: 10px;
 }
 
-.product-filter-radio-button[type=radio] {
+.product-filter-radio-button[type="radio"] {
   display: none;
 }
 
 .catalog-radio-type label {
   display: inline-block;
-	cursor: pointer;
-	position: relative;
-	padding-left: 25px;
-	line-height: 30px;
-	user-select: none;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  line-height: 30px;
+  user-select: none;
 }
 
 .catalog-radio-type label:before {
   content: "";
-	display: inline-block;
-	width: 25px;
-	height: 25px;
-	position: absolute;
-	left: 0;
-	bottom: 1px;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
   background: url(../img/img-for-catalog/radio-off.svg) 0 0 no-repeat;
   opacity: 0.4;
 }
 
-.product-filter-radio-button[type=radio]:checked + label:before {
+.product-filter-radio-button[type="radio"]:checked + label:before {
   background: url(../img/img-for-catalog/radio-on.svg) 0 0 no-repeat;
 }
 
@@ -509,9 +505,48 @@ img {
   opacity: 1;
 }
 
-.product-filter-radio-button[type=radio]:disabled + label:before {
+.product-filter-radio-button[type="radio"]:disabled + label:before {
   opacity: 0.1;
 }
+
+/* Filter-checkbox */
+.checkbox-other {
+  display: block;
+  margin: 0 0 10px 0;
+  line-height: 22px;
+}
+.checkbox-other input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: inline-block;
+  width: 25px;
+  height: 23px;
+  margin: 0 5px 0 0;
+  padding: 0;
+  vertical-align: top;
+  outline: none;
+  transition: background 0.3s ease;
+  background: url(../img/img-for-catalog/checkbox-off.svg) 0 0 no-repeat;
+  cursor: pointer;
+  opacity: 0.4;
+}
+
+.checkbox-other input[type="checkbox"]:checked {
+  background-image: url(../img/img-for-catalog/checkbox-on.svg);
+}
+
+.checkbox-other input[type="checkbox"]:hover {
+  opacity: 1;
+}
+
+.checkbox-other input[type="checkbox"]:active {
+  opacity: 1;
+}
+
+.checkbox-other input[type="checkbox"]:disabled {
+  opacity: 0.1;
+}
+
 /* Catalog */
 
 .catalog-sort-button {
@@ -592,6 +627,3 @@ img {
 .filter-button {
   width: 260px;
 }
-
-
-

@@ -31,6 +31,7 @@
   --basic-yellow: #efc849;
   --slider: #c1c1c1;
   --map-background: #eae6dd;
+  --button-active:  rgba(0, 1, 1, 0.1);
 
   /* Catalog-product background */
   --sedona: #4c80ab;
@@ -338,7 +339,7 @@ img {
 
 .button:active {
   background-color: var(--basic-red-extra-dark);
-  box-shadow: inset 0px 3px 0px rgba(0, 1, 1, 0.1);
+  box-shadow: inset 0px 3px 0px var(--button-active);
 }
 
 .active-opacity-button:active {

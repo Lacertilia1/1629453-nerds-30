@@ -25,7 +25,7 @@
         <ul class="site-navigation-list">
           <li><a class="site-navigation-link" href="#">Студия</a></li>
           <li><a class="site-navigation-link" href="#">Клиенты</a></li>
-          <li><a class="site-navigation-link catalog-link" href="catalog.html">Магазин</a></li>
+          <li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
           <li><a class="site-navigation-link" href="#">Контакты</a></li>
         </ul>
         <div>
@@ -54,11 +54,13 @@
             </li>
             <li>
               <label for="starting-point">От</label>
-              <input class="filter-range-price range-start" id="starting-point" type="number" name="start" placeholder="0">
+              <input class="filter-range-price range-start" id="starting-point" type="number" name="start"
+                placeholder="0">
             </li>
             <li>
               <label for="ending-point">До</label>
-              <input class="filter-range-price range-end" id="ending-point" type="number" name="end" placeholder="15000">
+              <input class="filter-range-price range-end" id="ending-point" type="number" name="end"
+                placeholder="15000">
             </li>
           </ul>
         </fieldset>
@@ -244,7 +246,8 @@
         <p class="footer-contacts-subtitle">Nёrds design studio</p>
         <p class="footer-contacts-adress">191186, Санкт-Петербург,<br> улица Б.Конюшенная, д. 19/8</p>
         <p>тел. <a class="contacts-phone" href="tel:+78122857575">+7(812)285-75-75</a></p>
-        <a class="button" href="#"><span class="active-opacity-button">Напишите нам</span></a>
+        <button class="button contacts-button" type="button"><span
+            class="active-opacity-button">Заказать</span></button>
       </div>
 
       <div class="main-footer-contacts-map">
@@ -287,7 +290,7 @@
       </div>
     </section>
   </footer>
-  <!--Всплывающее окно Pop-up
+  <!-- Всплывающее окно Pop-up
     <section class="popup">
       <h2 class="popup-heading">Напишите нам</h2>
       <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
@@ -304,7 +307,7 @@
           <input class="popup-form-text-input" id="message" type="text" name="message" placeholder="В свободной форме">
         </p>
 
-        <button class="button" type="submit"><span class="active-opacity-button">Отправить</span></button>
+        <button class="button modal-button" type="submit"><span class="active-opacity-button">Отправить</span></button>
       </form>
       <button class="button-close" type="button">Закрыть</button>
     </section>

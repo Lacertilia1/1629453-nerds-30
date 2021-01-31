@@ -240,6 +240,13 @@ img {
 }
 
 /* Font-size: 45; */
+
+.popup-heading,
+.performance-table-percent-item,
+.description-about-title {
+  font-size: 45px;
+}
+
 /* Main navigation */
 
 .main-header-logo-image:active {
@@ -383,7 +390,6 @@ img {
 /* Description */
 
 .description-about-title {
-  font-size: 45px;
   line-height: 45px;
 }
 
@@ -392,7 +398,6 @@ img {
 }
 
 .performance-table-percent-item {
-  font-size: 45px;
   line-height: 64px;
 }
 
@@ -474,7 +479,6 @@ img {
 }
 
 .popup-heading {
-  font-size: 45px;
   line-height: 53px;
 }
 

@@ -216,6 +216,20 @@ img {
   font-weight: 700;
 }
 
+/* Text-transform: uppercase; */
+.product-name,
+.catalog-sort-button,
+.filter-range-buttons,
+.product-filter-cost-legend,
+.description-performance-title,
+.description-about-subtitle,
+.features-name,
+.button,
+.site-navigation-link,
+.cart-link-text {
+  text-transform: uppercase;
+}
+
 /* Main navigation */
 
 .main-header-logo-image:active {
@@ -225,11 +239,6 @@ img {
 .main-navigation {
   line-height: 30px;
   background-color: var(--basic-white-neutral);
-}
-
-.site-navigation-link,
-.cart-link-text {
-  text-transform: uppercase;
 }
 
 .site-navigation-link:hover,
@@ -258,7 +267,6 @@ img {
   color: var(--basic-white);
   background-color: var(--basic-red);
   text-align: center;
-  text-transform: uppercase;
   border: none;
   border-radius: 3px;
   font: inherit;
@@ -336,7 +344,6 @@ img {
 .features-name {
   font-size: 24px;
   line-height: 30px;
-  text-transform: uppercase;
 }
 
 .second-button {
@@ -370,16 +377,8 @@ img {
   line-height: 45px;
 }
 
-.description-about-subtitle {
-  text-transform: uppercase;
-}
-
 .description-about-list {
   list-style-image: url(../img/img-for-index/dash-symbol.svg);
-}
-
-.description-performance-title {
-  text-transform: uppercase;
 }
 
 .performance-table-percent-item {
@@ -526,12 +525,10 @@ img {
 .product-filter-cost-legend {
   font-size: 18px;
   line-height: 30px;
-  text-transform: uppercase;
 }
 
 .filter-range-buttons {
   line-height: 22px;
-  text-transform: uppercase;
 }
 
 .radio-buttons-description-text {
@@ -642,7 +639,6 @@ img {
 .catalog-sort-button {
   font-size: 14px;
   line-height: 18px;
-  text-transform: uppercase;
   outline: none;
   border: 0;
   background: transparent;
@@ -679,7 +675,6 @@ img {
 .product-name {
   font-size: 18px;
   line-height: 30px;
-  text-transform: uppercase;
 }
 
 .product-name:hover {

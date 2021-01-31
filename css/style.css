@@ -272,6 +272,14 @@ img {
   line-height: 30px;
 }
 
+/* Line-height: 22px; */
+
+.checkbox-other,
+.filter-range-buttons,
+.main-footer-discount-subtitle {
+  line-height: 22px;
+}
+
 /* Main navigation */
 
 .main-header-logo-image:active {
@@ -460,7 +468,6 @@ img {
 }
 
 .main-footer-discount-subtitle {
-  line-height: 22px;
   color: var(--basic-black-dark);
 }
 
@@ -546,10 +553,6 @@ img {
   margin-bottom: 54px;
 }
 
-.filter-range-buttons {
-  line-height: 22px;
-}
-
 .radio-buttons-description-text {
   line-height: 19px;
 }
@@ -617,7 +620,6 @@ img {
 .checkbox-other {
   display: block;
   margin: 0 0 10px 0;
-  line-height: 22px;
 }
 .checkbox-other input[type="checkbox"] {
   -webkit-appearance: none;

@@ -248,6 +248,7 @@ img {
 }
 
 /* Line-height: 18px; */
+
 .product-list-item-description p,
 .catalog-sort-button,
 .catalog-button,
@@ -260,6 +261,17 @@ img {
   line-height: 18px;
 }
 
+/* Line-height: 30px; */
+
+.product-name,
+.catalog-radio-type label,
+.product-filter-cost-legend,
+.footer-contacts-subtitle,
+.features-name,
+.main-navigation {
+  line-height: 30px;
+}
+
 /* Main navigation */
 
 .main-header-logo-image:active {
@@ -267,7 +279,6 @@ img {
 }
 
 .main-navigation {
-  line-height: 30px;
   background-color: var(--basic-white-neutral);
 }
 
@@ -371,7 +382,6 @@ img {
 
 .features-name {
   font-size: 24px;
-  line-height: 30px;
 }
 
 .second-button {
@@ -438,10 +448,6 @@ img {
 }
 
 /* Footer */
-
-.footer-contacts-subtitle {
-  line-height: 30px;
-}
 
 .footer-contacts-adress,
 .contacts-phone {
@@ -540,10 +546,6 @@ img {
   margin-bottom: 54px;
 }
 
-.product-filter-cost-legend {
-  line-height: 30px;
-}
-
 .filter-range-buttons {
   line-height: 22px;
 }
@@ -583,7 +585,6 @@ img {
   cursor: pointer;
   position: relative;
   padding-left: 25px;
-  line-height: 30px;
   user-select: none;
 }
 
@@ -685,10 +686,6 @@ img {
 
 .product-list-item {
   margin: 40px;
-}
-
-.product-name {
-  line-height: 30px;
 }
 
 .product-name:hover {

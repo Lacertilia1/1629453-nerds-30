@@ -232,6 +232,13 @@ img {
   background: url(../img/img-for-index/radio-index-on.svg) 0 0 no-repeat;
 }
 
+/* <hr> stilization */
+.line-between-sections {
+  border: 0;
+  height: 2px;
+  width: 80%;
+  background: var(--basic-white-neutral);
+}
 /* Features */
 .features-list {
   list-style: none;
@@ -415,7 +422,6 @@ img {
 }
 
 /* CATALOG.HTML */
-
 .catalog-heading {
   font-size: 55px;
   line-height: 55px;
@@ -429,6 +435,26 @@ img {
 }
 
 /* Filter */
+.filter-range {
+  width: 260px;
+  height: 80px;
+  background: var(--basic-white-neutral);
+  border-radius: 3px;
+  margin-bottom: 14px;
+}
+
+.filter-range-buttons {
+  list-style: none;
+}
+
+.filter-range-price {
+  width: 80px;
+  height: 38px;
+  background: var(--basic-white-neutral);
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 54px;
+}
 
 .product-filter-cost-legend {
   font-size: 18px;

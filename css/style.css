@@ -217,6 +217,7 @@ img {
 }
 
 /* Text-transform: uppercase; */
+
 .product-name,
 .catalog-sort-button,
 .filter-range-buttons,
@@ -230,6 +231,15 @@ img {
   text-transform: uppercase;
 }
 
+/* Font-size: 18; */
+
+.product-name,
+.product-filter-cost-legend,
+.footer-contacts-subtitle {
+  font-size: 18px;
+}
+
+/* Font-size: 45; */
 /* Main navigation */
 
 .main-header-logo-image:active {
@@ -415,7 +425,6 @@ img {
 /* Footer */
 
 .footer-contacts-subtitle {
-  font-size: 18px;
   line-height: 30px;
 }
 
@@ -523,7 +532,6 @@ img {
 }
 
 .product-filter-cost-legend {
-  font-size: 18px;
   line-height: 30px;
 }
 
@@ -673,7 +681,6 @@ img {
 }
 
 .product-name {
-  font-size: 18px;
   line-height: 30px;
 }
 

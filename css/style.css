@@ -5,21 +5,21 @@
   font-style: normal;
   font-weight: 400;
   src: url(../fonts/roboto.woff2) format("woff2"),
-       url("../fonts/roboto.woff") format("woff");
+    url("../fonts/roboto.woff") format("woff");
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   src: url(../fonts/robotobold.woff2) format("woff2"),
-       url("../fonts/robotobold.woff") format("woff");
+    url("../fonts/robotobold.woff") format("woff");
 }
 @font-face {
   font-family: "Roboto";
   font-style: normal;
   font-weight: 500;
   src: url(../fonts/robotomedium.woff2) format("woff2"),
-       url("../fonts/robotomedium.woff") format("woff");
+    url("../fonts/robotomedium.woff") format("woff");
 }
 
 /* Variables */
@@ -152,6 +152,20 @@ img {
   height: auto;
 }
 
+/* List-style: none; */
+.pagination-list,
+.product-list,
+.radio-buttons-description-text,
+.filter-range-buttons,
+.main-footer-socials-list,
+.slider-list,
+.features-list,
+.partners-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 /* Main navigation */
 
 .main-header-logo-image:active {
@@ -172,6 +186,8 @@ img {
 
 .site-navigation-list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation-link:hover,
@@ -210,10 +226,6 @@ img {
 .button:active,
 .button:focus {
   outline: none;
-}
-
-.slider-list {
-  list-style: none;
 }
 
 .slider-slogan {
@@ -275,10 +287,6 @@ img {
 /* Features */
 .features-button {
   width: 160px;
-}
-
-.features-list {
-  list-style: none;
 }
 
 .features-name {
@@ -360,10 +368,6 @@ img {
 
 /* Partners */
 
-.partners-list {
-  list-style: none;
-}
-
 .partners-item-image {
   opacity: 0.2;
 }
@@ -409,9 +413,6 @@ img {
 }
 
 /* Socials */
-.main-footer-socials-list {
-  list-style: none;
-}
 
 .main-footer-socials-item-image {
   background-color: var(--basic-white-extra-light);
@@ -486,10 +487,6 @@ img {
   margin-bottom: 14px;
 }
 
-.filter-range-buttons {
-  list-style: none;
-}
-
 .filter-range-price {
   width: 80px;
   height: 38px;
@@ -514,7 +511,6 @@ img {
 
 .radio-buttons-description-text {
   line-height: 19px;
-  list-style: none;
 }
 
 .catalog-button {
@@ -640,10 +636,6 @@ img {
   color: var(--basic-black);
 }
 
-.product-list {
-  list-style: none;
-}
-
 .product-list-item-decoration {
   opacity: 0.12;
 }
@@ -683,10 +675,6 @@ img {
 .product-list-item-description p {
   line-height: 18px;
   color: var(--basic-black-light);
-}
-
-.pagination-list {
-  list-style: none;
 }
 
 .product-button {

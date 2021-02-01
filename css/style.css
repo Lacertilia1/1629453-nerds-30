@@ -322,13 +322,17 @@ img {
 
 .features {
   display: grid;
+  width: 1160px;
   margin-bottom: 80px;
 }
 
 .features-list {
+  width: 1110px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 100px;
+  padding: 0;
+  margin-right: 50px;
 }
 
 .features-item {

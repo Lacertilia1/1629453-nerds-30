@@ -7,6 +7,7 @@
   src: url(../fonts/roboto.woff2) format("woff2"),
     url("../fonts/roboto.woff") format("woff");
 }
+
 @font-face {
   font-family: "Roboto";
   font-style: normal;
@@ -14,6 +15,7 @@
   src: url(../fonts/robotobold.woff2) format("woff2"),
     url("../fonts/robotobold.woff") format("woff");
 }
+
 @font-face {
   font-family: "Roboto";
   font-style: normal;
@@ -25,15 +27,18 @@
 /* Variables */
 
 :root {
+
   /* Special */
+
   --basic-red: #fb565a;
   --basic-green: #00ca74;
-  --basic-yellow: #efc84a;
+  --basic-yellow: #efc849;
   --slider: #c1c1c1;
   --map-background: #eae6dd;
   --button-active:  rgba(0, 1, 1, 0.1);
 
   /* Catalog-product background */
+
   --sedona: #4c80ab;
   --pink: #26333e;
   --borodinski: #0a0a0a;
@@ -42,6 +47,7 @@
   --kvast: #5e390a;
 
   /* Shades of white */
+
   --basic-white: #ffffff;
   --basic-white-dark: #d7dcde;
   --basic-white-neutral: #eeeeee;
@@ -49,6 +55,7 @@
   --basic-white-extra-light: #e1e1e1;
 
   /* Shades of black */
+
   --basic-black: #000000;
   --basic-black-extra-dark: #283136;
   --basic-black-dark: #444444;
@@ -58,18 +65,22 @@
 
   /*  Цвета по секциям */
   /* INDEX.HTML */
+
   /* Header */
+
   --basic-white-neutral: #eeeeee;
   --basic-black-extra-light: #a6a6a6;
   --basic-black: #000000;
 
   /* Slider */
+
   --basic-white-neutral: #eeeeee;
   --basic-black: #000000;
   --basic-black-extra-dark: #283136;
   --basic-red: #fb565a;
 
   /* Features */
+
   --basic-red: #fb565a;
   --basic-green: #00ca74;
   --basic-yellow: #efc849;
@@ -77,10 +88,12 @@
   --basic-black-extra-dark: #283136;
 
   /* Description */
+
   --basic-black: #000000;
   --basic-black-extra-dark: #283136;
 
   /* Footer */
+
   --basic-black: #000000;
   --basic-black-light: #666666;
   --basic-red: #fb565a;
@@ -90,23 +103,27 @@
 
   /* CATALOG.HTML */
   /* Header */
+
   --basic-white-neutral: #eeeeee;
   --basic-black-extra-light: #a6a6a6;
   --basic-black: #000000;
 
   /* Product-filter */
+
   --range-button: #ababab;
   --basic-black: #000000;
   --basic-white-neutral: #eeeeee;
   --basic-black-extra-dark: #283136;
 
   /* Product-catalog */
+
   --basic-black: #000000;
   --basic-white-neutral: #eeeeee;
   --basic-red: #fb565a;
   --basic-white: #ffffff;
 
   /* Footer */
+
   --basic-black: #000000;
   --basic-black-light: #666666;
   --basic-red: #fb565a;
@@ -115,6 +132,7 @@
   --basic-black-dark: #444444;
 
   /* hover-active-focus-invalid */
+
   --basic-red-dark: #e74246;
   --basic-green-dark: #00bc6c;
   --basic-yellow-dark: #eab534;

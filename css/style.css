@@ -395,14 +395,38 @@ img {
 }
 
 .main-footer {
-  margin-top: 80px;
   margin-bottom: 68px;
+}
+
+.line-before-footer {
+ margin-bottom: 80px;
 }
 
 .main-footer-socials {
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 261px 1fr;
+}
+
+.page-catalog {
+  display: grid;
+}
+
+.catalog-heading {
+  justify-self: center;
+
+  margin-top: 78px;
+  margin-bottom: 108px;
+}
+
+.catalog-wrapper {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  align-content: start;
+  column-gap: 140px;
+
+  margin-top: 55px;
+  margin-bottom: 60px;
 }
 
 /* Main navigation */

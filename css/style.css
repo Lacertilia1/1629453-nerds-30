@@ -176,7 +176,7 @@ img {
   height: auto;
 }
 
-/* List-style: none; */
+/* Сгруппировал селекторы по свойству "List-style: none;" */
 
 .site-navigation-list,
 .pagination-list,
@@ -192,7 +192,7 @@ img {
   padding: 0;
 }
 
-/*  Color: var(--basic-black); */
+/* Сгруппировал селекторы по свойству "Color: var(--basic-black);" */
 
 .product-name,
 .active-sort-button,
@@ -214,7 +214,7 @@ img {
   color: var(--basic-black);
 }
 
-/* Font-weight: 500; */
+/* Сгруппировал селекторы по свойству "Font-weight: 500;" */
 
 .catalog-button,
 .catalog-heading,
@@ -224,7 +224,7 @@ img {
   font-weight: 500;
 }
 
-/* Font-weight: 700; */
+/* Сгруппировал селекторы по свойству "Font-weight: 700;" */
 
 .product-name,
 .product-filter-cost-legend,
@@ -240,7 +240,7 @@ img {
   font-weight: 700;
 }
 
-/* Text-transform: uppercase; */
+/* Сгруппировал селекторы по свойству "Text-transform: uppercase;" */
 
 .product-name,
 .catalog-sort-button,
@@ -255,7 +255,7 @@ img {
   text-transform: uppercase;
 }
 
-/* Font-size: 18px; */
+/* Сгруппировал селекторы по свойству "Font-size: 18px;" */
 
 .product-name,
 .product-filter-cost-legend,
@@ -263,7 +263,7 @@ img {
   font-size: 18px;
 }
 
-/* Font-size: 45px; */
+/* Сгруппировал селекторы по свойству "Font-size: 45px;" */
 
 .popup-heading,
 .performance-table-percent-item,
@@ -271,7 +271,7 @@ img {
   font-size: 45px;
 }
 
-/* Line-height: 18px; */
+/* Сгруппировал селекторы по свойству "Line-height: 18px;" */
 
 .product-list-item-description p,
 .catalog-sort-button,
@@ -285,7 +285,7 @@ img {
   line-height: 18px;
 }
 
-/* Line-height: 30px; */
+/* Сгруппировал селекторы по свойству "Line-height: 30px;" */
 
 .product-name,
 .catalog-radio-type label,
@@ -296,7 +296,7 @@ img {
   line-height: 30px;
 }
 
-/* Line-height: 22px; */
+/* Сгруппировал селекторы по свойству "Line-height: 22px;" */
 
 .checkbox-other,
 .filter-range-buttons,

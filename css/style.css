@@ -48,19 +48,19 @@
 
   /* Shades of white */
 
-  --basic-white: #fff;
+  --basic-white: #ffffff;
   --basic-white-dark: #d7dcde;
-  --basic-white-neutral: #eee;
+  --basic-white-neutral: #eeeeee;
   --basic-white-light: #dbdbdb;
   --basic-white-extra-light: #e1e1e1;
 
   /* Shades of black */
 
-  --basic-black: #000;
+  --basic-black: #000000;
   --basic-black-extra-dark: #283136;
-  --basic-black-dark: #444;
+  --basic-black-dark: #444444;
   --basic-black-neutral: #4d4d4d;
-  --basic-black-light: #666;
+  --basic-black-light: #666666;
   --basic-black-extra-light: #a6a6a6;
 
   /*  Цвета по секциям */
@@ -68,14 +68,14 @@
 
   /* Header */
 
-  --basic-white-neutral: #eee;
+  --basic-white-neutral: #eeeeee;
   --basic-black-extra-light: #a6a6a6;
-  --basic-black: #000;
+  --basic-black: #000000;
 
   /* Slider */
 
-  --basic-white-neutral: #eee;
-  --basic-black: #000;
+  --basic-white-neutral: #eeeeee;
+  --basic-black: #000000;
   --basic-black-extra-dark: #283136;
   --basic-red: #fb565a;
 
@@ -84,52 +84,52 @@
   --basic-red: #fb565a;
   --basic-green: #00ca74;
   --basic-yellow: #efc849;
-  --basic-black: #000;
+  --basic-black: #000000;
   --basic-black-extra-dark: #283136;
 
   /* Description */
 
-  --basic-black: #000;
+  --basic-black: #000000;
   --basic-black-extra-dark: #283136;
 
   /* Footer */
 
-  --basic-black: #000;
-  --basic-black-light: #666;
+  --basic-black: #000000;
+  --basic-black-light: #666666;
   --basic-red: #fb565a;
-  --basic-white: #fff;
+  --basic-white: #ffffff;
   --basic-white-extra-light: #e1e1e1;
-  --basic-black-dark: #444;
+  --basic-black-dark: #444444;
 
   /* CATALOG.HTML */
   /* Header */
 
-  --basic-white-neutral: #eee;
+  --basic-white-neutral: #eeeeee;
   --basic-black-extra-light: #a6a6a6;
-  --basic-black: #000;
+  --basic-black: #000000;
 
   /* Product-filter */
 
   --range-button: #ababab;
-  --basic-black: #000;
-  --basic-white-neutral: #eee;
+  --basic-black: #000000;
+  --basic-white-neutral: #eeeeee;
   --basic-black-extra-dark: #283136;
 
   /* Product-catalog */
 
-  --basic-black: #000;
+  --basic-black: #000000;
   --basic-white-neutral: #eee;
   --basic-red: #fb565a;
-  --basic-white: #fff;
+  --basic-white: #ffffff;
 
   /* Footer */
 
-  --basic-black: #000;
+  --basic-black: #000000;
   --basic-black-light: #666;
   --basic-red: #fb565a;
-  --basic-white: #fff;
+  --basic-white: #ffffff;
   --basic-white-extra-light: #e1e1e1;
-  --basic-black-dark: #444;
+  --basic-black-dark: #444444;
 
   /* hover-active-focus-invalid */
 
@@ -151,20 +151,22 @@
 /* Global */
 
 .page-body {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+
   min-width: 1160px;
+  min-height: 100%;
   margin: 0;
   padding: 0;
+
   font-family: "Roboto", Open Sans, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
   color: var(--basic-black-extra-dark);
-  background-color: var(--basic-white);
 
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
+  background-color: var(--basic-white);
 }
 
 a {
@@ -187,9 +189,10 @@ img {
 .slider-list,
 .features-list,
 .partners-list {
-  list-style: none;
   margin: 0;
   padding: 0;
+
+  list-style: none;
 }
 
 /* Сгруппировал селекторы по свойству "Color: var(--basic-black);" */
@@ -312,9 +315,12 @@ img {
   height: 1px;
   margin: -1px;
   padding: 0;
+
   border: 0;
-  clip: rect(0 0 0 0);
+
   overflow: hidden;
+
+  clip: rect(0 0 0 0);
 }
 
 /* Grid */
@@ -360,18 +366,20 @@ img {
 }
 
 .features-list {
-  width: 1110px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 100px;
-  padding: 0;
+
+  width: 1110px;
   margin-right: 50px;
+  padding: 0;
 }
 
 .description {
   display: grid;
   grid-template-columns: 1fr 360px;
   column-gap: 140px;
+
   margin-top: 39px;
   margin-bottom: 73px;
 }
@@ -389,9 +397,10 @@ img {
 }
 
 .partners-item {
-  margin: 0;
   justify-self: center;
   align-self: center;
+
+  margin: 0;
 }
 
 .main-footer {
@@ -403,9 +412,10 @@ img {
 }
 
 .main-footer-socials {
-  margin: 0 auto;
   display: grid;
   grid-template-columns: 261px 1fr;
+
+  margin: 0 auto;
 }
 
 .page-catalog {
@@ -455,14 +465,17 @@ img {
 }
 
 .button {
+  vertical-align: middle;
+
   height: 50px;
-  color: var(--basic-white);
-  background-color: var(--basic-red);
-  text-align: center;
+
   border: none;
   border-radius: 3px;
+
   font: inherit;
-  vertical-align: middle;
+  text-align: center;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
 }
 
 .button,
@@ -496,21 +509,25 @@ img {
 }
 
 .slider-radio-buttons-item label {
-  display: inline-block;
-  cursor: pointer;
   position: relative;
+
+  display: inline-block;
   padding-left: 25px;
   margin-right: 0;
+
+  cursor: pointer;
 }
 
 .slider-radio-buttons-item label:before {
   content: "";
-  display: inline-block;
-  width: 18px;
-  height: 18px;
+
   position: absolute;
   left: 0;
   bottom: 1px;
+
+  display: inline-block;
+  width: 18px;
+  height: 18px;
   background: url(../img/img-for-index/radio-index-off.svg) 0 0 no-repeat;
 }
 
@@ -521,9 +538,11 @@ img {
 /* <hr> stilization */
 
 .line-between-sections {
-  border: 0;
-  height: 2px;
   width: 1160px;
+  height: 2px;
+
+  border: 0;
+
   background: var(--basic-white-neutral);
 }
 
@@ -617,8 +636,9 @@ img {
 }
 
 .contacts-map-frame {
-  background-color: var(--map-background);
   height: 416px;
+
+  background-color: var(--map-background);
 }
 
 /* Socials */
@@ -650,9 +670,10 @@ img {
 }
 
 .popup-item input {
-  font: inherit;
   border: 2px solid var(--basic-white-dark);
   border-radius: 3px;
+
+  font: inherit;
 }
 
 .popup-item input:hover {
@@ -672,6 +693,7 @@ img {
 .catalog-heading {
   font-size: 55px;
   line-height: 55px;
+
   background-color: var(--basic-white-neutral);
 }
 
@@ -680,18 +702,22 @@ img {
 .filter-range {
   width: 260px;
   height: 80px;
-  background: var(--basic-white-neutral);
-  border-radius: 3px;
   margin-bottom: 14px;
+
+  border-radius: 3px;
+
+  background: var(--basic-white-neutral);
 }
 
 .filter-range-price {
   width: 80px;
   height: 38px;
-  background: var(--basic-white-neutral);
-  border-radius: 3px;
-  border: none;
   margin-bottom: 54px;
+
+  border: none;
+  border-radius: 3px;
+
+  background: var(--basic-white-neutral);
 }
 
 .radio-buttons-description-text {
@@ -725,22 +751,27 @@ img {
 }
 
 .catalog-radio-type label {
-  display: inline-block;
-  cursor: pointer;
   position: relative;
+
+  display: inline-block;
   padding-left: 25px;
-  user-select: none;
+
+  cursor: pointer;
 }
 
 .catalog-radio-type label:before {
   content: "";
-  display: inline-block;
-  width: 25px;
-  height: 25px;
+
   position: absolute;
   left: 0;
   bottom: 1px;
+
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+
   background: url(../img/img-for-catalog/radio-off.svg) 0 0 no-repeat;
+
   opacity: 0.4;
 }
 
@@ -762,20 +793,26 @@ img {
   display: block;
   margin: 0 0 10px 0;
 }
+
 .checkbox-other input[type="checkbox"] {
   -webkit-appearance: none;
-  -moz-appearance: none;
+     -moz-appearance: none;
   display: inline-block;
   width: 25px;
   height: 23px;
-  margin: 0 5px 0 0;
+  margin-right: 5px;
   padding: 0;
+
   vertical-align: top;
   outline: none;
-  transition: background 0.3s ease;
+
   background: url(../img/img-for-catalog/checkbox-off.svg) 0 0 no-repeat;
-  cursor: pointer;
+
+  transition: background 0.3s ease;
+
   opacity: 0.4;
+
+  cursor: pointer;
 }
 
 .checkbox-other input[type="checkbox"]:checked {
@@ -799,8 +836,11 @@ img {
 .catalog-sort-button {
   font-size: 14px;
   outline: none;
+
   border: 0;
+
   background: transparent;
+
   opacity: 0.3;
 }
 
@@ -823,7 +863,9 @@ img {
 .product-list-item-description {
   width: 360px;
   height: 231px;
+
   text-align: center;
+
   background-color: var(--basic-white-neutral);
 }
 
@@ -837,6 +879,7 @@ img {
 
 .product-name:active {
   color: var(--basic-black);
+
   opacity: 0.3;
 }
 
@@ -855,17 +898,20 @@ img {
 /* Paginatation */
 
 .pagination-button {
-  background: var(--basic-white-neutral);
   width: 50px;
   height: 50px;
+
+  background: var(--basic-white-neutral);
 }
 
 .active-button {
   background: transparent;
+
   border: 3px solid var(--basic-white-light);
 }
 
 .pagination-next-button {
-  background: var(--basic-white-neutral);
   width: 260px;
+
+  background: var(--basic-white-neutral);
 }

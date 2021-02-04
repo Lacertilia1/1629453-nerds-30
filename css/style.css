@@ -332,22 +332,53 @@ img {
 .container {
   width: 1160px;
   margin: 0 auto;
+  padding: 0;
 }
 
 /* Main navigation */
+.main-header {
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
 
 .main-navigation {
-  display: grid;
-  grid-template-columns: 160px 1fr min-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-navigation-wrapper {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  margin-bottom: 0;
 }
 
 .site-navigation-list {
-  justify-self: center;
+  width: 440px;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
 }
 
 
 .background-container {
   background-color: var(--basic-white-neutral);
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 66px;
+
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.user-navigation {
+  max-width: 75px;
+
+  outline: 5px solid rgba(255, 0, 255, 0.3);
+  outline-offset: -5px;
 }
 
 .main-header-logo-image:active {
@@ -368,6 +399,9 @@ img {
 
 .slider {
   margin-bottom: 80px;
+
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
 }
 
 .slider-grid {
@@ -435,8 +469,8 @@ img {
   position: relative;
 
   display: inline-block;
-  padding-left: 25px;
-  margin-right: 0;
+
+
 
   cursor: pointer;
 }
@@ -472,9 +506,9 @@ img {
 /* Features */
 
 .features {
-  display: grid;
   margin-bottom: 80px;
-  margin-top: 80px;
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
 }
 
 .features-list {
@@ -483,8 +517,8 @@ img {
   column-gap: 100px;
 
   width: 1110px;
-  margin-right: 50px;
-  padding: 0;
+
+
 }
 
 .features-button {
@@ -493,6 +527,10 @@ img {
 
 .features-name {
   font-size: 24px;
+}
+
+.line-below-features {
+  margin-bottom: 39px;
 }
 
 .second-button {
@@ -526,8 +564,10 @@ img {
   grid-template-columns: 1fr 360px;
   column-gap: 140px;
 
-  margin-top: 39px;
-  margin-bottom: 73px;
+  margin-bottom: 80px;
+
+  outline: 5px solid rgba(0, 255, 255 , 0.3);
+  outline-offset: -5px;
 }
 
 .description-about-title {
@@ -553,12 +593,15 @@ img {
   text-align: left;
 }
 
+.line-below-description {
+  margin-bottom: 46px;
+}
+
 /* Partners */
 
 .partners {
   height: 90px;
-  margin-top: 46px;
-  margin-bottom: 44px;
+
 }
 
 .partners-list {
@@ -571,7 +614,7 @@ img {
   justify-self: center;
   align-self: center;
 
-  margin: 0;
+
 }
 
 .partners-item-image {
@@ -589,18 +632,16 @@ img {
 /* Footer */
 
 .main-footer {
-  margin-bottom: 68px;
+
 }
 
 .line-before-footer {
- margin-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .main-footer-socials {
-  display: grid;
-  grid-template-columns: 261px 1fr;
 
-  margin: 0 auto;
+
 }
 
 .footer-contacts-adress,

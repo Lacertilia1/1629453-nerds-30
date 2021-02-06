@@ -351,7 +351,6 @@ img {
 .site-navigation-list {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
 
   width: 440px;
 }

@@ -609,11 +609,8 @@ img {
   margin-bottom: 80px;
 }
 
-.main-footer-socials {
-  margin: 68px 97px 68px 0;
-}
-
 .social-and-discount {
+  display: flex;
 
 }
 
@@ -638,6 +635,11 @@ img {
 }
 
 /* Socials */
+.social-icons {
+  margin-right: 140px;
+
+  min-width: 260px;
+}
 
 .main-footer-socials-item-image {
   background-color: var(--basic-white-extra-light);
@@ -934,7 +936,7 @@ img {
 }
 
 /* Обведение блоков с помощью свойства outline */
-
+/*
 .main-header {
   outline: 5px solid rgba(0, 255, 0, 0.3);
   outline-offset: -5px;
@@ -1009,3 +1011,23 @@ img {
   outline: 5px solid rgba(34, 173, 207, 0.3);
   outline-offset: -5px;
 }
+
+.social-and-discount {
+  outline: 5px solid rgba(58, 23, 116, 0.3);
+  outline-offset: -5px;
+}
+
+.description {
+  outline: 5px solid rgba(134, 83, 216, 0.3);
+  outline-offset: -5px;
+}
+
+.description-about {
+  outline: 5px solid rgba(37, 199, 72, 0.3);
+  outline-offset: -5px;
+}
+
+.description-performance {
+  outline: 5px solid rgba(252, 9, 9, 0.3);
+  outline-offset: -5px;
+} */

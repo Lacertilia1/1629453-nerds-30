@@ -336,10 +336,6 @@ img {
 }
 
 /* Main navigation */
-.main-header {
-  outline: 5px solid rgba(0, 255, 0, 0.3);
-  outline-offset: -5px;
-}
 
 .main-navigation {
   display: flex;
@@ -357,8 +353,6 @@ img {
 
 .site-navigation-list {
   width: 440px;
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
 }
 
 
@@ -369,16 +363,10 @@ img {
 .main-header-logo {
   width: 160px;
   height: 66px;
-
-  outline: 5px solid rgba(255, 0, 0, 0.3);
-  outline-offset: -5px;
 }
 
 .user-navigation {
   max-width: 75px;
-
-  outline: 5px solid rgba(255, 0, 255, 0.3);
-  outline-offset: -5px;
 }
 
 .main-header-logo-image:active {
@@ -399,13 +387,12 @@ img {
 
 .slider {
   margin-bottom: 80px;
-
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
 }
 
 .slider-grid {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .slider-item {
@@ -507,8 +494,6 @@ img {
 
 .features {
   margin-bottom: 80px;
-  outline: 5px solid rgba(0, 255, 255, 0.3);
-  outline-offset: -5px;
 }
 
 .features-list {
@@ -565,9 +550,6 @@ img {
   column-gap: 140px;
 
   margin-bottom: 80px;
-
-  outline: 5px solid rgba(0, 255, 255 , 0.3);
-  outline-offset: -5px;
 }
 
 .description-about-title {
@@ -599,22 +581,21 @@ img {
 
 /* Partners */
 
-.partners {
-  height: 90px;
-
-}
-
 .partners-list {
-  display: grid;
-  grid-template-columns: 260px 260px 260px 260px;
-  column-gap: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 1085px;
+  min-height: 90px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 44px;
 }
 
-.partners-item {
-  justify-self: center;
-  align-self: center;
-
-
+.html-academy-partner {
+  margin-top: 17px;
 }
 
 .partners-item-image {
@@ -958,4 +939,46 @@ img {
   width: 260px;
 
   background: var(--basic-white-neutral);
+}
+
+/* Обведение блоков с помощью свойства outline */
+
+.main-header {
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.site-navigation-list {
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
+}
+
+.main-header-logo {
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.slider {
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
+}
+
+.features {
+  outline: 5px solid rgba(0, 255, 255, 0.3);
+  outline-offset: -5px;
+}
+
+.description {
+  outline: 5px solid rgba(0, 255, 255 , 0.3);
+  outline-offset: -5px;
+}
+
+.partners-list {
+  outline: 5px solid rgba(0, 255, 255 , 0.3);
+  outline-offset: -5px;
+}
+
+.partners-item {
+  outline: 5px solid rgba(79, 16, 161, 0.3);
+  outline-offset: -5px;
 }

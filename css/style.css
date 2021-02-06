@@ -337,12 +337,6 @@ img {
 
 /* Main navigation */
 
-.main-navigation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .main-navigation-wrapper {
   display: flex;
   justify-content: space-between;
@@ -611,17 +605,15 @@ img {
 }
 
 /* Footer */
-
-.main-footer {
-
-}
-
 .line-before-footer {
   margin-bottom: 80px;
 }
 
 .main-footer-socials {
+  margin: 68px 97px 68px 0;
+}
 
+.social-and-discount {
 
 }
 
@@ -980,5 +972,40 @@ img {
 
 .partners-item {
   outline: 5px solid rgba(79, 16, 161, 0.3);
+  outline-offset: -5px;
+}
+
+.slider-item {
+  outline: 5px solid rgba(77, 75, 230, 0.3);
+  outline-offset: -5px;
+}
+
+.user-navigation {
+  outline: 5px solid rgba(230, 75, 230, 0.3);
+  outline-offset: -5px;
+}
+
+.main-footer-socials {
+  outline: 5px solid rgba(133, 15, 70, 0.3);
+  outline-offset: -5px;
+}
+
+.social-icons {
+  outline: 5px solid rgba(74, 20, 223, 0.3);
+  outline-offset: -5px;
+}
+
+.main-footer-discount {
+  outline: 5px solid rgba(25, 235, 77, 0.3);
+  outline-offset: -5px;
+}
+
+.main-footer-contacts {
+  outline: 5px solid rgba(59, 26, 150, 0.3);
+  outline-offset: -5px;
+}
+
+.main-footer {
+  outline: 5px solid rgba(34, 173, 207, 0.3);
   outline-offset: -5px;
 }

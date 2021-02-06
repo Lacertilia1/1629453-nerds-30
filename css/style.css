@@ -27,7 +27,6 @@
 /* Variables */
 
 :root {
-
   /* Special */
 
   --basic-red: #fb565a;
@@ -35,7 +34,7 @@
   --basic-yellow: #efc849;
   --slider: #c1c1c1;
   --map-background: #eae6dd;
-  --button-active:  rgba(0, 1, 1, 0.1);
+  --button-active: rgba(0, 1, 1, 0.1);
 
   /* Catalog-product background */
 
@@ -349,7 +348,6 @@ img {
   width: 440px;
 }
 
-
 .background-container {
   background-color: var(--basic-white-neutral);
 }
@@ -458,8 +456,6 @@ img {
 
   display: inline-block;
 
-
-
   cursor: pointer;
 }
 
@@ -503,8 +499,6 @@ img {
   column-gap: 100px;
 
   width: 1110px;
-
-
 }
 
 .features-button {
@@ -618,7 +612,6 @@ img {
 
 .social-and-discount {
   display: flex;
-
 }
 
 .footer-contacts-adress,
@@ -780,15 +773,13 @@ img {
 
   background: var(--basic-white-neutral);
 
-  outline:none;
+  outline: none;
 }
 
 .range-interval-box {
   display: flex;
   justify-content: space-between;
 }
-
-
 
 .radio-buttons-description-text {
   line-height: 19px;
@@ -866,7 +857,7 @@ img {
 
 .checkbox-other input[type="checkbox"] {
   -webkit-appearance: none;
-     -moz-appearance: none;
+  -moz-appearance: none;
   display: inline-block;
   width: 25px;
   height: 23px;
@@ -963,7 +954,7 @@ img {
 }
 
 /* Данное свойство убирает нужний отступ у последних двух элементов списка в каталоге. Работает при переполнении. */
-.product-list-item:nth-last-child(-n+2) {
+.product-list-item:nth-last-child(-n + 2) {
   margin-bottom: 0;
 }
 
@@ -1018,7 +1009,7 @@ img {
 
 /* Обведение блоков с помощью свойства outline */
 
-.main-header {
+/* .main-header {
   outline: 5px solid rgba(0, 255, 0, 0.3);
   outline-offset: -5px;
 }
@@ -1161,5 +1152,4 @@ img {
 .pagination {
   outline: 5px solid rgba(14, 0, 212, 0.3);
   outline-offset: -5px;
-}
-
+} */

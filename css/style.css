@@ -443,9 +443,6 @@ img {
 }
 
 .active-opacity-button {
-  color: var(--basic-black);
-  font-weight: 500;
-
   opacity: 1;
 }
 
@@ -920,6 +917,11 @@ img {
   background: transparent;
 
   opacity: 0.3;
+}
+
+.catalog-active-opacity-button {
+  color: var(--basic-black);
+  font-weight: 500;
 }
 
 .catalog-sort-button:hover {

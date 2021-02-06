@@ -15,55 +15,62 @@
 </head>
 
 <body class="page-body">
-  <div class="background-container">
-    <header class="main-header">
+
+  <header class="main-header">
+    <div class="background-container">
       <nav class="main-navigation container">
-        <a class="main-header-logo" href="/">
-          <img class="main-header-logo-image" src="img/img-for-index/nerds-logo.svg" width="160" height="66"
-            alt="Логотип компании NERDS">
-        </a>
-        <ul class="site-navigation-list">
-          <li><a class="site-navigation-link" href="#">Студия</a></li>
-          <li><a class="site-navigation-link" href="#">Клиенты</a></li>
-          <li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
-          <li><a class="site-navigation-link" href="#">Контакты</a></li>
-        </ul>
-        <div>
-          <a class="cart-link" href="#">
-            <img class="cart-link-image" src="img/img-for-index/cart-icon.svg" width="15" height="15" alt="">
-            <p class="cart-link-text">Корзина</p>
+        <div class="main-navigation-wrapper">
+          <a class="main-header-logo" href="index.html">
+            <img class="main-header-logo-image" src="img/img-for-index/nerds-logo.svg" width="160" height="66"
+              alt="Логотип компании NERDS">
           </a>
+          <ul class="site-navigation-list">
+            <li><a class="site-navigation-link" href="#">Студия</a></li>
+            <li><a class="site-navigation-link" href="#">Клиенты</a></li>
+            <li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
+            <li><a class="site-navigation-link" href="#">Контакты</a></li>
+          </ul>
+          <div class="user-navigation">
+            <a class="cart-link" href="#">
+              <p class="cart-link-text">Корзина</p>
+            </a>
+          </div>
         </div>
       </nav>
-    </header>
-
-  </div>
+      <div class="catalog-heading-wrapper container">
+        <h1 class="catalog-heading">Магазин готовых шаблонов</h1>
+      </div>
+    </div>
+  </header>
 
   <main class="page-catalog container">
 
-    <h1 class="catalog-heading">Магазин готовых шаблонов</h1>
     <div class="catalog-wrapper">
       <section class="product-filter">
         <h2 class="hidden">Фильтр товаров</h2>
         <form class="product-filter-form" method="get" action="https://echo.htmlacademy.ru">
           <fieldset class="product-filter-name">
-            <legend class="product-filter-cost-legend">Стоимость:</legend>
+            <legend class="product-filter-cost-legend product-filter-cost-name">Стоимость:</legend>
 
             <!-- input type="range" с кнопками-->
             <ul class="filter-range-buttons">
-              <li>
-                <input class="filter-range" type="range" min="0" max="15000" step="100" value="12000">
+              <li class="filter-range-box-margin">
+                <div class="filter-range-box">
+                  <input class="filter-range" type="range" min="0" max="15000" step="100" value="12000">
+                </div>
               </li>
-              <li>
-                <label for="starting-point">От</label>
-                <input class="filter-range-price range-start" id="starting-point" type="number" name="start"
-                  placeholder="0">
-              </li>
-              <li>
-                <label for="ending-point">До</label>
-                <input class="filter-range-price range-end" id="ending-point" type="number" name="end"
-                  placeholder="15000">
-              </li>
+              <div class="range-interval-box">
+                <li class="filter-range-start">
+                  <label for="starting-point">От</label>
+                  <input class="filter-range-price range-start" id="starting-point" type="number" name="start"
+                    placeholder="0">
+                </li>
+                <li class="filter-range-end">
+                  <label for="ending-point">До</label>
+                  <input class="filter-range-price range-end" id="ending-point" type="number" name="end"
+                    placeholder="15000">
+                </li>
+              </div>
             </ul>
           </fieldset>
           <fieldset class="product-filter-name">
@@ -128,7 +135,7 @@
       <section class="product-catalog">
         <h2 class="hidden">Каталог товаров</h2>
         <fieldset class="product-filter-name">
-          <legend class="product-filter-cost-legend">Сортировать:</legend>
+          <legend class="product-filter-cost-legend product-filter-cost-name">Сортировать:</legend>
           <div class="product-catalog-sort">
             <button class="catalog-sort-button active-sort-button" type="button">По цене</button>
             <button class="catalog-sort-button" type="button">По типу</button>
@@ -142,7 +149,7 @@
             <li class="product-list-item">
               <img class="product-list-item-decoration" src="/img/img-for-catalog/top-of-catalog-item.svg" width="360"
                 height="40" alt="">
-              <p>
+              <p class="product-list-item-text">
                 <img class="product-list-item-image first-product-image" src="img/img-for-catalog/img-sedona.jpg"
                   width="358" height="578"
                   alt="Фотография потрясающего каньона, находящегося рядом с городом Седона в Аризоне.">
@@ -156,7 +163,7 @@
             <li class="product-list-item">
               <img class="product-list-item-decoration" src="/img/img-for-catalog/top-of-catalog-item.svg" width="360"
                 height="40" alt="">
-              <p>
+              <p class="product-list-item-text">
                 <img class="product-list-item-image second-product-image" src="img/img-for-catalog/img-pink.jpg"
                   width="358" height="578" alt="Рука человека, которая держит смартфон.">
               </p>
@@ -169,7 +176,7 @@
             <li class="product-list-item">
               <img class="product-list-item-decoration" src="/img/img-for-catalog/top-of-catalog-item.svg" width="360"
                 height="40" alt="">
-              <p>
+              <p class="product-list-item-text">
                 <img class="product-list-item-image third-product-image" src="img/img-for-catalog/img-barbershop.jpg"
                   width="358" height="578" alt="Фотография помещения барбершопа Бородинский со стулом на главном фоне.">
               </p>
@@ -182,7 +189,7 @@
             <li class="product-list-item">
               <img class="product-list-item-decoration" src="/img/img-for-catalog/top-of-catalog-item.svg" width="360"
                 height="40" alt="">
-              <p>
+              <p class="product-list-item-text">
                 <img class="product-list-item-image fourth-product-image" src="img/img-for-catalog/img-mishka.jpg"
                   width="358" height="578" alt="Фотография вязанных плюшевых игрушек, лежащих на полке.">
               </p>
@@ -195,7 +202,7 @@
             <li class="product-list-item">
               <img class="product-list-item-decoration" src="/img/img-for-catalog/top-of-catalog-item.svg" width="360"
                 height="40" alt="">
-              <p>
+              <p class="product-list-item-text">
                 <img class="product-list-item-image fifth-product-image" src="img/img-for-catalog/img-aplus.jpg"
                   width="358" height="578" alt="Стильная фотография смартфона и подставки для карандашей в форме руки.">
               </p>
@@ -208,7 +215,7 @@
             <li class="product-list-item">
               <img class="product-list-item-decoration" src="/img/img-for-catalog/top-of-catalog-item.svg" width="360"
                 height="40" alt="">
-              <p>
+              <p class="product-list-item-text">
                 <img class="product-list-item-image sixth-product-image" src="img/img-for-catalog/img-kvast.jpg"
                   width="358" height="578" alt="Слоган компании Кваст на фоне пшеницы.">
               </p>
@@ -247,8 +254,8 @@
 
   <footer class="main-footer">
     <section class="main-footer-contacts">
-      <div class="main-footer-contacts-adress">
-        <h2 class="hidden">Контактная информация</h2>
+      <h2 class="hidden">Контактная информация</h2>
+      <!-- <div class="main-footer-contacts-adress">
         <p class="footer-contacts-subtitle">Nёrds design studio</p>
         <p class="footer-contacts-adress">191186, Санкт-Петербург,<br> улица Б.Конюшенная, д. 19/8</p>
         <p>тел. <a class="contacts-phone" href="tel:+78122857575">+7(812)285-75-75</a></p>
@@ -257,42 +264,46 @@
       </div>
 
       <div class="main-footer-contacts-map">
-        <!--Здесь будет карта-->
-        <div class="contacts-map-frame">
+        <div>
+          <img class="contacts-map-marker-image" src="img/img-for-index/map-marker.png" width="231" height="190" alt="">
+        </div> -->
 
-        </div>
-        <img class="contacts-map-marker-image" src="img/img-for-index/map-marker.png" width="231" height="190" alt="">
+      <div class="contacts-map-frame">
+        <!--Здесь будет карта-->
+      </div>
       </div>
     </section>
 
-    <section class="main-footer-socials container">
+    <section class="main-footer-socials">
       <h2 class="hidden">Социальные сети</h2>
-      <div class="social-icons">
-        <ul class="main-footer-socials-list">
-          <li class="main-footer-socials-item">
-            <a href="#">
-              <img class="main-footer-socials-item-image first-social-image" src="img/img-for-index/vk-icon.svg"
-                width="26" height="15" alt="Иконка Вконтакте.">
-            </a>
-          </li>
-          <li class="main-footer-socials-item">
-            <a href="#">
-              <img class="main-footer-socials-item-image second-social-image" src="img/img-for-index/fb-icon.svg"
-                width="12" height="22" alt="Иконка Фейсбук.">
-            </a>
-          </li>
-          <li class="main-footer-socials-item">
-            <a href="#">
-              <img class="main-footer-socials-item-image third-social-image" src="img/img-for-index/insta-icon.svg"
-                width="21" height="21" alt="Иконка Инстаграм.">
-            </a>
-          </li>
-        </ul>
-      </div>
+      <div class="social-and-discount container">
+        <div class="social-icons">
+          <ul class="main-footer-socials-list">
+            <li class="main-footer-socials-item">
+              <a href="#">
+                <img class="main-footer-socials-item-image first-social-image" src="img/img-for-index/vk-icon.svg"
+                  width="26" height="15" alt="Иконка Вконтакте.">
+              </a>
+            </li>
+            <li class="main-footer-socials-item">
+              <a href="#">
+                <img class="main-footer-socials-item-image second-social-image" src="img/img-for-index/fb-icon.svg"
+                  width="12" height="22" alt="Иконка Фейсбук.">
+              </a>
+            </li>
+            <li class="main-footer-socials-item">
+              <a href="#">
+                <img class="main-footer-socials-item-image third-social-image" src="img/img-for-index/insta-icon.svg"
+                  width="21" height="21" alt="Иконка Инстаграм.">
+              </a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="main-footer-discount">
-        <p class="main-footer-discount-title">Давайте дружить, это выгодно!</p>
-        <p class="main-footer-discount-subtitle">Скидка 10% для друзей из социальных сетей.</p>
+        <div class="main-footer-discount">
+          <p class="main-footer-discount-title">Давайте дружить, это выгодно!</p>
+          <p class="main-footer-discount-subtitle">Скидка 10% для друзей из социальных сетей.</p>
+        </div>
       </div>
     </section>
   </footer>

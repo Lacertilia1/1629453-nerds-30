@@ -390,6 +390,7 @@ img {
 
 .site-navigation-link:active,
 .cart-link-text:active {
+  color: var(--basic-black);
   opacity: 0.3;
 }
 

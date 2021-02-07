@@ -1217,7 +1217,7 @@ img {
 }
 
 /* Обведение блоков с помощью свойства outline */
-
+/*
 .main-header {
   outline: 5px solid rgba(0, 255, 0, 0.3);
   outline-offset: -5px;
@@ -1367,9 +1367,10 @@ img {
   outline: 5px solid rgba(199, 9, 9, 0.3);
   outline-offset: -5px;
 }
+*/
 
 /* Обводка микросетки с помощью свойства outline */
-
+/*
 .slider-item-text {
   outline: 5px solid rgba(90, 23, 245, 0.3);
   outline-offset: -5px;
@@ -1508,4 +1509,4 @@ img {
 .social-and-discount {
   outline: 5px solid rgba(0, 255, 34, 0.3);
   outline-offset: -5px;
-}
+} */

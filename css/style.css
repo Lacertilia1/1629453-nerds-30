@@ -183,6 +183,7 @@ img {
 .pagination-list,
 .product-list,
 .radio-buttons-description-text,
+.radio-buttons-description-text-filters,
 .filter-range-buttons,
 .main-footer-socials-list,
 .slider-list,
@@ -799,6 +800,8 @@ img {
 }
 
 .footer-icon:active {
+  box-shadow: inset 0px 3px 0px var(--button-active);
+
   background-color: var(--basic-red-extra-dark);
 }
 
@@ -966,8 +969,24 @@ img {
   justify-content: space-between;
 }
 
-.radio-buttons-description-text {
+.radio-buttons-description-text-filters {
   line-height: 19px;
+}
+
+.radio-buttons-description-text-filters li {
+  margin-bottom: 17px;
+}
+
+.radio-buttons-description-text-filters li:last-of-type {
+  margin-bottom: 0;
+}
+
+.radio-buttons-description-text li {
+  margin-bottom: 15px;
+}
+
+.radio-buttons-description-text li:last-of-type{
+  margin-bottom: 0;
 }
 
 .catalog-button {
@@ -1000,7 +1019,7 @@ img {
   position: relative;
 
   display: inline-block;
-  padding-left: 25px;
+  padding-left: 36px;
 
   cursor: pointer;
 }

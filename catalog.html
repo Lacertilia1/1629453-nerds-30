@@ -20,26 +20,21 @@
     <div class="background-container">
       <nav class="main-navigation container">
         <div class="main-navigation-wrapper">
-          <a class="main-header-logo" href="index.html">
+          <a class="main-header-logo" href="/">
             <img class="main-header-logo-image" src="img/img-for-index/nerds-logo.svg" width="160" height="66"
               alt="Логотип компании NERDS">
           </a>
           <ul class="site-navigation-list">
-            <li><a class="site-navigation-link" href="#">Студия</a></li>
-            <li><a class="site-navigation-link" href="#">Клиенты</a></li>
-            <li><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
-            <li><a class="site-navigation-link" href="#">Контакты</a></li>
+            <li class="site-navigation-item"><a class="site-navigation-link" href="#">Студия</a></li>
+            <li class="site-navigation-item"><a class="site-navigation-link" href="#">Клиенты</a></li>
+            <li class="site-navigation-item"><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
+            <li class="site-navigation-item"><a class="site-navigation-link" href="#">Контакты</a></li>
           </ul>
           <div class="user-navigation">
-            <a class="cart-link" href="#">
-              <p class="cart-link-text">Корзина</p>
-            </a>
+            <a class="cart-link cart-link-text" href="#">Корзина</a>
           </div>
         </div>
       </nav>
-      <div class="catalog-heading-wrapper container">
-        <h1 class="catalog-heading">Магазин готовых шаблонов</h1>
-      </div>
     </div>
   </header>
 
@@ -94,7 +89,7 @@
           </fieldset>
           <fieldset class="product-filter-name">
             <legend class="product-filter-cost-legend">Особенности:</legend>
-            <ul class="radio-buttons-description-text">
+            <ul class="radio-buttons-description-text-filters">
               <li>
                 <label class="checkbox-other" for="filter-slider">
                   <input class="product-filter-radio-checkbox" type="checkbox" name="slider" id="filter-slider" checked>
@@ -232,19 +227,19 @@
           <ul class="pagination-list">
             <li>
               <button class="button pagination-button catalog-button active-button" type="button"><span
-                  class="active-opacity-button">1</span></button>
+                  class="catalog-active-opacity-button">1</span></button>
             </li>
             <li>
               <button class="button pagination-button catalog-button" type="button"><span
-                  class="active-opacity-button">2</span></button>
+                  class="catalog-active-opacity-button">2</span></button>
             </li>
             <li>
               <button class="button pagination-button catalog-button" type="button"><span
-                  class="active-opacity-button">3</span></button>
+                  class="catalog-active-opacity-button">3</span></button>
             </li>
             <li>
               <button class="button pagination-next-button catalog-button" type="button"><span
-                  class="active-opacity-button">Следующая</span></button>
+                  class="catalog-active-opacity-button">Следующая</span></button>
             </li>
           </ul>
         </div>

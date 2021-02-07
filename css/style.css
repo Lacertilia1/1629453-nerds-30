@@ -368,8 +368,14 @@ img {
   max-width: 75px;
 }
 
-.site-navigation-link {
+.site-navigation-item,
+.site-navigation-list,
+.user-navigation {
   height: 30px;
+}
+
+.user-navigation {
+  padding-left: 50px;
 }
 
 .main-header-logo-image:active {

@@ -400,7 +400,29 @@ img {
 
 .slider-item {
   display: grid;
-  grid-template-columns: 1fr 760px;
+  grid-template-columns: 160px 40px 160px 40px 160px 40px 160px 40px 160px 40px 160px;
+  grid-template-rows: 317px 18px 96px;
+}
+
+.slider-image {
+  grid-column-start: 5;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: -1;
+}
+
+.slider-item-text {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: -1;
+
+  height: 431px;
+}
+
+.slider-item-text-description {
+  margin: 0;
+  margin-bottom: 38px;
 }
 
 .slider-button {
@@ -428,6 +450,10 @@ img {
 }
 
 .slider-slogan {
+  margin: 0;
+  margin-top: 78px;
+  margin-bottom: 25px;
+
   font-size: 50px;
   line-height: 50px;
 }
@@ -453,6 +479,11 @@ img {
 
 .slider-radio-buttons-list {
   justify-self: center;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 88px;
 }
 
 .slider-radio-buttons-item input[type="radio"] {
@@ -509,12 +540,27 @@ img {
   width: 1110px;
 }
 
+.features-image {
+  margin-bottom: 22px;
+  width: 300px;
+  height: 146px;
+}
+
 .features-button {
   width: 160px;
 }
 
 .features-name {
+  margin: 0;
+  margin-bottom: 16px;
+  height: 30px;
+
   font-size: 24px;
+}
+
+.features-item p {
+  height: 48px;
+  margin-bottom: 32px;
 }
 
 .line-below-features {
@@ -555,15 +601,77 @@ img {
   margin-bottom: 80px;
 }
 
+.description-about-title,
+.description-about-text,
+.description-about-subtitle,
+.description-about-list {
+  margin: 0;
+}
+
 .description-about-title {
+  height: 91px;
+  margin-top: 34px;
+  margin-bottom: 32px;
+
   line-height: 45px;
 }
 
+.description-about-text {
+  height: 49px;
+  margin-bottom: 39px;
+}
+
+.description-about-subtitle {
+  margin-bottom: 23px;
+}
+
 .description-about-list {
-  list-style-image: url(../img/img-for-index/dash-symbol.svg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 0;
+  height: 120px;
+
+  list-style-type:none;
+  /* background: url(../img/img-for-index/dash-symbol.svg) 0 50% no-repeat; */
+  /* list-style-image: url(../img/img-for-index/dash-symbol.svg); */
+}
+
+.description-about-item {
+  background: url(../img/img-for-index/dash-symbol.svg) 0 50% no-repeat;
+  padding-left: 32px;
+}
+
+.description-performance-image {
+  width: 360px;
+  height: 208px;
+
+  margin-bottom: 31px;
+}
+
+.description-performance-title {
+  height: 24px;
+
+  margin: 0;
+  margin-bottom: 31px;
+
+  text-align: center;
+}
+
+.performance-table {
+  width: 100%;
+  height: 112px;
+
+  margin: 0;
+}
+
+.performance-table {
+  border-spacing: 0;
 }
 
 .performance-table-percent-item {
+  text-align: start;
   line-height: 64px;
 }
 
@@ -620,6 +728,10 @@ img {
 
 .social-and-discount {
   display: flex;
+
+  height: 81px;
+
+  margin-bottom: 68px;
 }
 
 .footer-contacts-adress,
@@ -628,37 +740,96 @@ img {
 }
 
 .main-footer-discount-title {
+  margin: 0;
+  margin-bottom: 10px;
+  margin-top: 7px;
+
   font-size: 36px;
   line-height: 36px;
 }
 
 .main-footer-discount-subtitle {
+  margin: 0;
+  margin-bottom: 6px;
+
   color: var(--basic-black-dark);
+}
+
+.main-footer-discount {
+  height: 81px;
 }
 
 .contacts-map-frame {
   height: 416px;
+
+  margin-bottom: 68px;
 
   background-color: var(--map-background);
 }
 
 /* Socials */
 .social-icons {
+  display: flex;
+  justify-content: space-between;
+
   margin-right: 140px;
 
-  min-width: 260px;
+  width: 261px;
 }
 
-.main-footer-socials-item-image {
+.footer-icon {
+  width: 81px;
+  height: 81px;
+
+  border-radius: 50%;
+
+  font-size: 0;
+
   background-color: var(--basic-white-extra-light);
 }
 
-.main-footer-socials-item-image:hover {
+.footer-icon:hover {
   background-color: var(--basic-red-dark);
 }
 
-.main-footer-socials-item-image:active {
+.footer-icon:active {
   background-color: var(--basic-red-extra-dark);
+}
+
+.vk-icon {
+  background-image: url("../img/img-for-index/vk-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.vk-icon:active {
+  background-image: url("../img/img-for-index/vk-icon-active.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.facebook-icon {
+  background-image: url("../img/img-for-index/fb-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.facebook-icon:active {
+  background-image: url("../img/img-for-index/fb-icon-active.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.instagram-icon {
+  background-image: url("../img/img-for-index/insta-icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+}
+
+.instagram-icon:active {
+  background-image: url("../img/img-for-index/insta-icon-active.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
 
 .contacts-button {
@@ -1021,7 +1192,7 @@ img {
 }
 
 /* Обведение блоков с помощью свойства outline */
-/*
+
 .main-header {
   outline: 5px solid rgba(0, 255, 0, 0.3);
   outline-offset: -5px;
@@ -1048,12 +1219,12 @@ img {
 }
 
 .description {
-  outline: 5px solid rgba(0, 255, 255 , 0.3);
+  outline: 5px solid rgba(0, 255, 255, 0.3);
   outline-offset: -5px;
 }
 
 .partners-list {
-  outline: 5px solid rgba(0, 255, 255 , 0.3);
+  outline: 5px solid rgba(0, 255, 255, 0.3);
   outline-offset: -5px;
 }
 
@@ -1170,4 +1341,146 @@ img {
 .main-navigation {
   outline: 5px solid rgba(199, 9, 9, 0.3);
   outline-offset: -5px;
-} */
+}
+
+/* Обводка микросетки с помощью свойства outline */
+
+.slider-item-text {
+  outline: 5px solid rgba(90, 23, 245, 0.3);
+  outline-offset: -5px;
+}
+
+.slider-slogan {
+  outline: 5px solid rgba(255, 0, 212, 0.3);
+  outline-offset: -5px;
+}
+
+.slider-item-text-description {
+  outline: 5px solid rgba(38, 0, 255, 0.3);
+  outline-offset: -5px;
+}
+
+.slider-button {
+  outline: 5px solid rgba(38, 0, 255, 0.3);
+  outline-offset: -5px;
+}
+
+.active-opacity-slider-button {
+  outline: 5px solid rgba(0, 255, 13, 0.3);
+  outline-offset: -5px;
+}
+
+.features-item {
+  outline: 5px solid rgba(0, 255, 13, 0.3);
+  outline-offset: -5px;
+}
+
+.features-image {
+  outline: 5px solid rgba(68, 0, 255, 0.3);
+  outline-offset: -5px;
+}
+
+.features-name {
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.features-item p {
+  outline: 5px solid rgba(0, 255, 234, 0.3);
+  outline-offset: -5px;
+}
+
+.features-button {
+  outline: 5px solid rgba(238, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.features-list {
+  outline: 5px solid rgba(0, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.description {
+  outline: 5px solid rgba(255, 3, 3, 0.3);
+  outline-offset: -5px;
+}
+
+.description-about {
+  outline: 5px solid rgba(55, 0, 255, 0.3);
+  outline-offset: -5px;
+}
+
+.description-performance {
+  outline: 5px solid rgba(55, 0, 255, 0.3);
+  outline-offset: -5px;
+}
+
+.description-about-title {
+  outline: 5px solid rgba(55, 0, 255, 0.3);
+  outline-offset: -5px;
+}
+
+.description-about-text {
+  outline: 5px solid rgba(0, 255, 170, 0.3);
+  outline-offset: -5px;
+}
+
+.description-about-subtitle {
+  outline: 5px solid rgba(208, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.description-about-list {
+  outline: 5px solid rgba(129, 211, 204, 0.3);
+  outline-offset: -5px;
+}
+
+.description-performance-image {
+  outline: 5px solid rgba(0, 255, 234, 0.3);
+  outline-offset: -5px;
+}
+
+.description-performance-title {
+  outline: 5px solid rgba(132, 0, 255, 0.3);
+  outline-offset: -5px;
+}
+
+.performance-table {
+  outline: 5px solid rgba(0, 255, 64, 0.3);
+  outline-offset: -5px;
+}
+
+.performance-table-percent-list {
+  outline: 5px solid rgba(255, 0, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.performance-table-text-list {
+  outline: 5px solid rgba(17, 0, 255, 0.3);
+  outline-offset: -5px;
+}
+
+.performance-table-percent-item {
+  outline: 5px solid rgba(0, 255, 234, 0.3);
+  outline-offset: -5px;
+}
+
+.performance-table-text-item {
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.main-footer-discount-title {
+  outline: 5px solid rgba(0, 255, 0, 0.3);
+  outline-offset: -5px;
+}
+
+.main-footer-discount-subtitle {
+  outline: 5px solid rgba(76, 0, 255, 0.3);
+  outline-offset: -5px;
+}
+
+.social-and-discount {
+  outline: 5px solid rgba(0, 255, 34, 0.3);
+  outline-offset: -5px;
+}

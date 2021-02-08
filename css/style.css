@@ -842,7 +842,7 @@ img {
 }
 
 .popup-item input:invalid {
-  border: 2px solid var(-basic-red-dark);
+  border: 2px solid var(--basic-red-dark);
 }
 
 /* Catalog */
@@ -1067,12 +1067,19 @@ img {
 
 /* Catalog */
 
+.catalog-sortbuttons-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
 .product-list {
   display: flex;
   flex-wrap: wrap;
 }
 
 .catalog-sort-button {
+  margin-right: 25px;
+
   font-size: 14px;
   outline: none;
 
@@ -1081,6 +1088,11 @@ img {
   background: transparent;
 
   opacity: 0.3;
+}
+
+.up-direction,
+.down-direction {
+  margin: 0;
 }
 
 .catalog-active-opacity-button {

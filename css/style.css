@@ -344,6 +344,7 @@ img {
 .main-navigation-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 
   width: 100%;
   margin-bottom: 0;
@@ -492,35 +493,6 @@ img {
   justify-content: space-between;
 
   width: 88px;
-}
-
-.slider-radio-buttons-item[type="radio"] {
-  display: none;
-}
-
-.slider-radio-button label {
-  position: relative;
-
-  display: inline-block;
-
-  cursor: pointer;
-}
-
-.slider-radio-button label:before {
-  content: "";
-
-  position: absolute;
-  left: 0;
-  bottom: 1px;
-
-  display: inline-block;
-  width: 18px;
-  height: 18px;
-  background: url(../img/img-for-index/radio-index-off.svg) 0 0 no-repeat;
-}
-
-.slider-radio-buttons-item[type="radio"]:checked + label:before {
-  background: url(../img/img-for-index/radio-index-on.svg) 0 0 no-repeat;
 }
 
 /* <hr> stilization */

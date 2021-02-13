@@ -938,6 +938,8 @@ img {
 
 .footer-icon:active {
   background-color: var(--basic-red-extra-dark);
+
+  box-shadow: inset 0px 3px 0px var(--button-active);
 }
 
 .footer-icon:active path {
@@ -949,6 +951,9 @@ img {
   width: 219px;
 }
 
+.footer-contacts-phone {
+  color: var(--basic-black-light);
+}
 /* Modal */
 
 .popup {

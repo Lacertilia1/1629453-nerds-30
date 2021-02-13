@@ -65,6 +65,7 @@ ______________________________________________________________________
   --map-background: #eae6dd;
   --button-active: rgba(0, 1, 1, 0.1);
   --modal-box-shadow: rgba(0, 0, 0, 0.4);
+  --toggle-shadow: rgba(0, 0, 0, 0.15);
 
   /* Catalog-product background */
 
@@ -82,6 +83,7 @@ ______________________________________________________________________
   --basic-white-neutral: #eeeeee;
   --basic-white-light: #dbdbdb;
   --basic-white-extra-light: #e1e1e1;
+  --range-unput: #d7dcdf;
 
   /* Shades of black */
 
@@ -1268,6 +1270,90 @@ img {
   opacity: 0.1;
 }
 
+/* Filter Range Input */
+
+.range-filter {
+  width: 260px;
+}
+
+.range-controls {
+  position: relative;
+
+  height: 41px;
+  margin-bottom: 14px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+
+  background-color: var(--basic-white-neutral);
+
+  border-radius: 3px;
+}
+
+.range-controls .scale {
+  height: 2px;
+  background: var(--range-unput);
+}
+
+.range-controls .bar {
+  width: 70%;
+  height: 2px;
+  background: var(--basic-green);
+}
+
+.range-controls .toggle {
+  position: absolute;
+  top: 31px;
+  left: 0;
+
+  width: 4px;
+  height: 4px;
+  padding: 0;
+
+  border: 8px solid var(--basic-white);
+  border-radius: 50%;
+
+  background-color: var(--range-button);
+  box-shadow: 0 2px 1px 0 var(--toggle-shadow);
+
+  cursor: grab;
+}
+
+.range-controls .toggle-min {
+  left: 18px;
+}
+
+.range-controls .toggle-max {
+  left: 160px;
+}
+
+.price-controls {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-controls label {
+  text-transform: uppercase;
+  line-height: 22px;
+}
+
+.price-controls input {
+  box-sizing: border-box;
+  width: 80px;
+  padding: 10px;
+  margin-left: 12px;
+
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
+
+  border: none;
+  border-radius: 3px;
+
+  background: var(--basic-white-neutral);
+  color: var(--basic-black-extra-dark);
+
+}
 /* Filter-checkbox */
 
 .checkbox-other {

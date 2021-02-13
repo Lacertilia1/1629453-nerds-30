@@ -1244,6 +1244,10 @@ img {
   background-color: var(--button-dark-grey);
 }
 
+.catalog-button:active .catalog-active-opacity-button {
+  opacity: 0.3;
+}
+
 .product-filter-name {
   border: none;
 }
@@ -1355,17 +1359,35 @@ img {
   flex-wrap: wrap;
 }
 
+.product-catalog-sort {
+  width: 359px;
+}
+
+.catalog-image-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .catalog-sort-button {
   margin-right: 25px;
+  padding: 0;
 
   font-size: 14px;
   outline: none;
 
   border: 0;
 
-  background: transparent;
+  background: none;
 
   opacity: 0.3;
+}
+
+.last-sort-button {
+  margin-right: 40px;
+}
+
+.active-sort-button {
+  opacity: 1;
 }
 
 .up-direction,
@@ -1373,8 +1395,14 @@ img {
   margin: 0;
 }
 
+.down-direction {
+  margin-right: 10px;
+}
+
 .catalog-sort-button:hover {
   opacity: 0.6;
+
+  cursor: pointer;
 }
 
 .catalog-sort-button:active {
@@ -1390,17 +1418,31 @@ img {
   opacity: 0.12;
 }
 
-.product-list-item-decoration:hover {
-  opacity: 1;
+.catalog-image-wrapper {
+  position: relative;
 }
 
 .product-list-item-description {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
   width: 360px;
   height: 231px;
 
   text-align: center;
 
   background-color: var(--basic-white-neutral);
+
+  visibility: hidden;
+}
+
+.catalog-image-wrapper:hover .product-list-item-description {
+  visibility: visible;
+}
+
+.catalog-image-wrapper:hover .product-list-item-decoration {
+  opacity: 1;
 }
 
 .product-list-item {
@@ -1470,6 +1512,11 @@ img {
   background: var(--basic-white-neutral);
 }
 
+.catalog-active-opacity-button {
+  color: var(--basic-black);
+  font-weight: 500;
+  line-height: 18px;
+}
 
 /* Добавление курсора при наведение на ссылки(кнопки). */
 

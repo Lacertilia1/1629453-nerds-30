@@ -1185,33 +1185,6 @@ img {
   margin-bottom: 48px;
 }
 
-.filter-range-box {
-  height: 80px;
-
-  background-color: var(--basic-white-neutral);
-}
-
-.filter-range-box-margin {
-  margin-bottom: 14px;
-}
-
-.filter-range {
-  width: 260px;
-  height: 80px;
-}
-
-.filter-range-price {
-  width: 80px;
-  height: 38px;
-
-  border: none;
-  border-radius: 3px;
-
-  background: var(--basic-white-neutral);
-
-  outline: none;
-}
-
 .radio-buttons-description-text-filters {
   line-height: 19px;
 }
@@ -1253,14 +1226,6 @@ img {
 }
 
 /* Filter-radio-buttons */
-
-.filter-range-buttons {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-
-  margin-bottom: 10px;
-}
 
 .product-filter-radio-button[type="radio"] {
   display: none;

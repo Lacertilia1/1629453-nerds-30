@@ -24,10 +24,6 @@ ______________________________________________________________________
              - Все кнопки полностью переделаны. Вместо тэга <button>
                использовал в большинстве случаев тэг <a>.
                Эффекты из стайлгайда работают.
-              ________________________________________________________
-
-              - Большинство ссылок имеют абсолютные адреса. То есть
-                при клике, вы перейдете на другой сайт.
 ______________________________________________________________________
 
 */
@@ -451,20 +447,39 @@ img {
 }
 
 .main-navigation-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 160px 202px 437px 246px 115px;
+  grid-template-rows: 26px 30px 9px;
 
   width: 100%;
   margin-bottom: 0;
 }
 
+.main-header-logo-image {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: -1;
+}
+
 .site-navigation-list {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 
   width: 440px;
+}
+
+.user-navigation {
+  grid-column-start: -1;
+  grid-column-end: -2;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }
 
 .background-container {
@@ -493,7 +508,7 @@ img {
   content: "";
   position: absolute;
   top: 8px;
-  left: 10px;
+  left: -39px;
 
   width: 15px;
   height: 15px;
@@ -509,12 +524,12 @@ img {
   height: 30px;
 }
 
-.user-navigation {
-  padding-left: 50px;
-}
-
 .main-header-logo-image:active {
   opacity: 0.3;
+}
+
+.user-navigation {
+  justify-self: end;
 }
 
 .site-navigation-link:hover,
@@ -616,7 +631,7 @@ img {
 
 .slider-controls {
   position: absolute;
-  left: 538px;
+  left: 536px;
   bottom: 96px;
 
   display: flex;
@@ -717,7 +732,7 @@ img {
 }
 
 .features-image {
-  margin-bottom: 25px;
+  margin-bottom: 16px;
   width: 300px;
   height: 146px;
 }
@@ -749,7 +764,8 @@ img {
   grid-template-columns: 1fr 360px;
   column-gap: 140px;
 
-  margin-bottom: 80px;
+  margin-bottom: 0;
+  margin-bottom: 83px;
 }
 
 .description-about-title,
@@ -791,34 +807,31 @@ img {
 
 .description-about-item {
   background: url(../img/img-for-index/dash-symbol.svg) 0 50% no-repeat;
-  padding-left: 39px;
+  padding-left: 37px;
 }
 
 .description-performance-image {
   width: 360px;
   height: 208px;
 
-  margin-bottom: 32px;
+  margin-bottom: 30px;
 }
 
 .description-performance-title {
   height: 24px;
 
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 26px;
 
   text-align: center;
 }
 
 .performance-table {
-  width: 100%;
-  height: 112px;
+  min-width: 100%;
+  height: 120px;
 
+  border-spacing: 5px;
   margin: 0;
-}
-
-.performance-table {
-  border-spacing: 0;
 }
 
 .performance-table-percent-item {
@@ -843,27 +856,50 @@ img {
   margin-bottom: 46px;
 }
 
-.description {
-  margin-bottom: 0;
-  margin-bottom: 73px;
-}
 /* Partners */
 
 .partners-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  width: 1085px;
-  min-height: 90px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-bottom: 44px;
+  display: grid;
+  grid-template-columns: 34px 199px 47px 2px 45px 209px 44px 2px 58px 185px 54px 2px 63px 173px 43px;
 }
 
-.html-academy-partner {
-  margin-top: 17px;
+.partners-item:nth-of-type(1) {
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+
+.partners-item:nth-of-type(2) {
+  grid-column-start: 4;
+  grid-column-end: 5;
+}
+
+.partners-item:nth-of-type(3) {
+  grid-column-start: 6;
+  grid-column-end: 7;
+}
+
+.partners-item:nth-of-type(4) {
+  grid-column-start: 8;
+  grid-column-end: 9;
+}
+
+.partners-item:nth-of-type(5) {
+  grid-column-start: 10;
+  grid-column-end: 11;
+}
+
+.partners-item:nth-of-type(6) {
+  grid-column-start: 12;
+  grid-column-end: 13;
+}
+
+.partners-item:nth-of-type(7) {
+  grid-column-start: 14;
+  grid-column-end: 15;
+}
+
+.partners-item {
+  align-self: center;
 }
 
 .partners-item-image {
@@ -878,16 +914,26 @@ img {
   opacity: 0.1;
 }
 
+.html-academy-partner {
+  margin-top: 7px;
+  margin-right: 2px;
+}
+
+.fourth-partner-image {
+  margin-top: 3px;
+}
 /* Footer */
 
 .footer-contacts-subtitle {
   margin-top: 0;
+
+  text-transform: uppercase;
 }
 
 .main-footer-contacts-adress {
   position: absolute;
-  left: 140px;
-  top: 54px;
+  left: 372px;
+  top: 52px;
 
   width: 319px;
   height: 308px;
@@ -895,10 +941,10 @@ img {
   background-color: var(--basic-white);
 }
 
-.contacts-map-frame-image {
+.contacts-map-marker-image {
   position: absolute;
-  left: 50%;
-  top: 86px;
+  top: 82px;
+  left: 1057px;
 }
 
 .footer-contacts-subtitle,
@@ -914,6 +960,7 @@ img {
 }
 
 .footer-contacts-phone {
+  margin-top: 18px;
   margin-bottom: 37px;
 
   line-height: 18px;
@@ -924,8 +971,8 @@ img {
 }
 
 .line-before-footer {
-  margin-top: 0;
-  margin-bottom: 80px;
+  margin-top: 37px;
+  margin-bottom: 81px;
 }
 
 .social-and-discount {
@@ -1044,7 +1091,7 @@ img {
 
 .popup-item-textarea {
   margin: 0;
-  margin-bottom: 47px;
+  margin-bottom: 60px;
 }
 
 .popup-heading {
@@ -1091,9 +1138,9 @@ img {
 }
 
 .popup-form-text-input {
-  width: 755px;
-  height: 68px;
-  padding: 14px 0;
+  width: 727px;
+  height: 88px;
+  padding: 12px 14px;
 
   resize: none;
 }
@@ -1777,8 +1824,8 @@ img {
 .main-navigation {
   outline: 5px solid rgba(199, 9, 9, 0.3);
   outline-offset: -5px;
-} */
-
+}
+*/
 /* Обводка микросетки с помощью свойства outline */
 /*
 .slider-item-text {
@@ -1914,8 +1961,8 @@ img {
 .social-and-discount {
   outline: 5px solid rgba(0, 255, 34, 0.3);
   outline-offset: -5px;
-} */
-
+}
+*/
 /* Modal outline */
 /*
  .popup {
@@ -1951,4 +1998,5 @@ img {
 .modal-button {
   outline: 5px solid rgba(255, 0, 0, 0.3);
   outline-offset: -5px;
-} */
+}
+*/

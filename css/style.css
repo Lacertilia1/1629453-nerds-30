@@ -765,7 +765,7 @@ img {
   column-gap: 140px;
 
   margin-bottom: 0;
-  margin-bottom: 83px;
+  margin-bottom: 74px;
 }
 
 .description-about-title,
@@ -1837,7 +1837,7 @@ img {
 }
 */
 /* Обводка микросетки с помощью свойства outline */
-
+/*
 .slider-item-text {
   outline: 5px solid rgba(90, 23, 245, 0.3);
   outline-offset: -5px;
@@ -1972,6 +1972,7 @@ img {
   outline: 5px solid rgba(0, 255, 34, 0.3);
   outline-offset: -5px;
 }
+*/
 
 /* Modal outline */
 /*

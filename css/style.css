@@ -1030,6 +1030,7 @@ img {
 .contacts-map-frame {
   position: relative;
 
+  width: 100%;
   height: 416px;
 
   margin-bottom: 68px;

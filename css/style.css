@@ -1,13 +1,8 @@
 /* Список мелких задач, которые нужно выполнить:
   ____________________________________________________________________
 
-  - Исправить нижний отступ в блоке "Partners" у "HTML Academy".
-
-  - Выровнить ссылки "main-navigation".
-
-  - Сделать карту.
-
-  - Стилизовать модальное окно.
+  - Изменить ширину макета с 1160px на 1200px, добавив отступы.
+  ____________________________________________________________________
 
 */
 
@@ -24,6 +19,15 @@ ______________________________________________________________________
              - Все кнопки полностью переделаны. Вместо тэга <button>
                использовал в большинстве случаев тэг <a>.
                Эффекты из стайлгайда работают.
+______________________________________________________________________
+
+- 14.02.2021 - Стилизовал модальное окно.
+              ________________________________________________________
+
+             - Выровнил ссылки в "main-navigation".
+             ________________________________________________________
+
+             - Исправил нижний отступ в блоке "Partners".
 ______________________________________________________________________
 
 */
@@ -67,6 +71,7 @@ ______________________________________________________________________
   --button-active: rgba(0, 1, 1, 0.1);
   --modal-box-shadow: rgba(0, 0, 0, 0.4);
   --toggle-shadow: rgba(0, 0, 0, 0.15);
+  --catalog-image-border: rgba(0, 0, 0, 0.1);
 
   /* Catalog-product background */
 
@@ -1238,7 +1243,7 @@ img {
   column-gap: 140px;
 
   margin-top: 55px;
-  margin-bottom: 60px;
+  margin-bottom: 70px;
 }
 
 .catalog-heading {
@@ -1299,6 +1304,14 @@ img {
 }
 
 .product-filter-name {
+  border: none;
+}
+
+.catalog-margin {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 73px;
+
   border: none;
 }
 
@@ -1491,6 +1504,10 @@ img {
 .catalog-image-wrapper {
   display: flex;
   flex-direction: column;
+
+  box-sizing: border-box;
+  border: 1px solid var(--catalog-image-border);
+  border-radius: 5px;
 }
 
 .catalog-sort-button {
@@ -1552,7 +1569,7 @@ img {
   left: 0;
   bottom: 0;
 
-  width: 360px;
+  width: 356px;
   height: 231px;
 
   text-align: center;
@@ -1586,6 +1603,16 @@ img {
 /* Данное свойство убирает нужний отступ у последних двух элементов списка в каталоге. Работает при переполнении. */
 .product-list-item:nth-last-child(-n + 2) {
   margin-bottom: 0;
+}
+
+.product-name-heading {
+  margin-top: 28px;
+  margin-bottom: 12px;
+}
+
+.product-name-description-text {
+  margin-top: 0;
+  margin-bottom: 33px;
 }
 
 .product-name:hover {

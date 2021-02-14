@@ -1211,22 +1211,6 @@ img {
   margin-bottom: 0;
 }
 
-.catalog-button {
-  background-color: var(--basic-white-neutral);
-}
-
-.catalog-button:hover {
-  background-color: var(--button-grey);
-}
-
-.catalog-button:active {
-  background-color: var(--button-dark-grey);
-}
-
-.catalog-button:active .catalog-active-opacity-button {
-  opacity: 0.3;
-}
-
 .product-filter-name {
   border: none;
 }
@@ -1537,6 +1521,28 @@ img {
 
 .filter-button {
   width: 260px;
+  padding: 0;
+
+  font-weight: 500;
+  line-height: 18px;
+
+  color: var(--basic-black);
+  background-color: var(--basic-white-neutral);
+}
+
+.filter-button:hover {
+  background-color: var(--button-grey);
+}
+
+.filter-button:active {
+  background-color: var(--button-dark-grey);
+
+  box-shadow: inset 0px 3px 0px var(--button-active);
+}
+
+.filter-button:active .catalog-active-opacity-button,
+.catalog-pagination-link:active .catalog-active-opacity-button {
+  opacity: 0.3;
 }
 
 /* Paginatation */
@@ -1545,31 +1551,49 @@ img {
   justify-content: space-between;
 
   width: 443px;
+
+  text-transform: uppercase;
 }
 
-.pagination-button {
-  width: 50px;
-  height: 50px;
+.catalog-pagination-link {
+  padding-top: 17px;
+  padding-bottom: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 
-  background: var(--basic-white-neutral);
-}
-
-.active-button {
-  background: transparent;
-
-  border: 3px solid var(--basic-white-light);
-}
-
-.pagination-next-button {
-  width: 260px;
-
-  background: var(--basic-white-neutral);
-}
-
-.catalog-active-opacity-button {
-  color: var(--basic-black);
   font-weight: 500;
   line-height: 18px;
+
+  border-radius: 3px;
+
+  color: var(--basic-black);
+  background-color: var(--basic-white-neutral);
+}
+
+.catalog-pagination-next-link {
+  padding-left: 78px;
+  padding-right: 77px;
+}
+
+.catalog-pagination-link:hover {
+  background-color: var(--button-grey);
+}
+
+.catalog-pagination-link:active {
+  background-color: var(--button-dark-grey);
+
+  box-shadow: inset 0px 3px 0px var(--button-active);
+}
+
+.active-pagination-button {
+  padding-top: 14px;
+  padding-bottom: 12px;
+  padding-left: 17px;
+  padding-right: 17px;
+
+  border: 3px solid var(--basic-white-light);
+
+  background: transparent;
 }
 
 /* Добавление курсора при наведение на ссылки(кнопки). */

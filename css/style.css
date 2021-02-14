@@ -1272,7 +1272,7 @@ img {
 }
 
 .product-filter-name:nth-of-type(3) {
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 
 .product-filter-cost-legend {
@@ -1296,7 +1296,7 @@ img {
 }
 
 .radio-buttons-description-text li {
-  margin-bottom: 15px;
+  margin-bottom: 7px;
 }
 
 .radio-buttons-description-text li:last-of-type {
@@ -1310,7 +1310,7 @@ img {
 .catalog-margin {
   padding: 0;
   margin: 0;
-  margin-bottom: 73px;
+  margin-bottom: 70px;
 
   border: none;
 }
@@ -1429,7 +1429,7 @@ img {
   box-sizing: border-box;
   width: 80px;
   padding: 10px;
-  margin-left: 12px;
+  margin-left: 10px;
 
   text-align: center;
   font-family: inherit;
@@ -1454,7 +1454,7 @@ img {
   display: inline-block;
   width: 25px;
   height: 23px;
-  margin-right: 5px;
+  margin-right: 7px;
   padding: 0;
 
   vertical-align: top;
@@ -1499,6 +1499,8 @@ img {
 
 .product-catalog-sort {
   width: 359px;
+
+  padding-top: 2px;
 }
 
 .catalog-image-wrapper {
@@ -1511,7 +1513,7 @@ img {
 }
 
 .catalog-sort-button {
-  margin-right: 25px;
+  margin-right: 21px;
   padding: 0;
 
   font-size: 14px;
@@ -1525,7 +1527,7 @@ img {
 }
 
 .last-sort-button {
-  margin-right: 40px;
+  margin-right: 44px;
 }
 
 .active-sort-button {
@@ -1538,7 +1540,7 @@ img {
 }
 
 .down-direction {
-  margin-right: 10px;
+  margin-right: 14px;
 }
 
 .catalog-sort-button:hover {

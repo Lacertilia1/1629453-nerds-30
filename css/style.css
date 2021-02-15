@@ -517,8 +517,8 @@ img {
 .user-navigation::before {
   content: "";
   position: absolute;
-  top: 8px;
-  left: -39px;
+  top: 6px;
+  left: -41px;
 
   width: 15px;
   height: 15px;
@@ -641,7 +641,7 @@ img {
 
 .slider-controls {
   position: absolute;
-  left: 536px;
+  left: 556px;
   bottom: 96px;
 
   display: flex;
@@ -817,7 +817,7 @@ img {
 
 .description-about-item {
   background: url(../img/img-for-index/dash-symbol.svg) 0 50% no-repeat;
-  padding-left: 37px;
+  padding-left: 36px;
 }
 
 .description-performance {

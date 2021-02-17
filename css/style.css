@@ -1568,6 +1568,8 @@ iframe {
 .product-list-item-image {
   width: 358px;
   height: 578px;
+
+  object-fit: contain;
 }
 
 .product-list-item-decoration {

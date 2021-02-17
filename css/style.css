@@ -1077,6 +1077,8 @@ iframe {
 /* Modal */
 
 .popup {
+  display: none;
+
   position: fixed;
   bottom: 180px;
   top: auto;
@@ -1087,6 +1089,9 @@ iframe {
   width: 960px;
   height: 590px;
   margin: auto;
+  padding: 63px 99px 84px 100px;
+
+  box-sizing: border-box;
 
   background-color: var(--basic-white);
 
@@ -1107,15 +1112,12 @@ iframe {
 
 .popup-item-textarea {
   margin: 0;
-  margin-bottom: 60px;
 }
 
 .popup-heading {
   position: relative;
 
-  margin-top: 63px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin: 0;
   margin-bottom: 37px;
 
   line-height: 53px;
@@ -1130,9 +1132,7 @@ iframe {
 
   width: 761px;
   height: 353px;
-
-  margin-left: 100px;
-  margin-bottom: 84px;
+  margin: 0;
 }
 
 .popup-item {
@@ -1152,6 +1152,7 @@ iframe {
 
 .popup-item-textarea {
   width: 760px;
+  margin-bottom: 58px;
 }
 
 .popup-form-text-input {

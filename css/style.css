@@ -1077,6 +1077,8 @@ iframe {
 /* Modal */
 
 .popup {
+  display: none;
+  position: fixed;
   bottom: 180px;
   top: auto;
   left: 0;

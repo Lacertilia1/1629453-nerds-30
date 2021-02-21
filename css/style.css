@@ -1073,12 +1073,10 @@ iframe {
 .footer-contacts-phone {
   color: var(--basic-black-light);
 }
+
 /* Modal */
 
 .popup {
-  display: none;
-
-  position: fixed;
   bottom: 180px;
   top: auto;
   left: 0;

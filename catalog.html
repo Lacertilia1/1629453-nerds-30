@@ -6,7 +6,7 @@
   <title>HTML Academy: Нёрдс</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
@@ -27,8 +27,8 @@
           <ul class="site-navigation-list">
             <li class="site-navigation-item"><a class="site-navigation-link" href="index.html">Студия</a></li>
             <li class="site-navigation-item"><a class="site-navigation-link" href="#">Клиенты</a></li>
-            <li class="site-navigation-item"><a class="site-navigation-link site-navigation-active"
-                href="#">Магазин</a></li>
+            <li class="site-navigation-item"><a class="site-navigation-link site-navigation-active" href="#">Магазин</a>
+            </li>
             <li class="site-navigation-item"><a class="site-navigation-link" href="#">Контакты</a></li>
           </ul>
           <div class="user-navigation">
@@ -47,7 +47,7 @@
     <div class="catalog-wrapper">
       <section class="product-filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form class="product-filter-form" method="get" action="https://echo.htmlacademy.ru">
+        <form class="product-filter-form" method="get" action="https://echo.htmlacademy.ru" target="_blank">
           <fieldset class="product-filter-name">
             <legend class="product-filter-cost-legend product-filter-cost-name">Стоимость:</legend>
             <div class="range-filter">
@@ -153,7 +153,7 @@
                 <div class="product-list-item-description">
                   <h3 class="product-name-heading"><a class="product-name" href="#">Sedona</a></h3>
                   <p class="product-name-description-text">Информационный сайт<br> для туристов</p>
-                  <button class="button product-button" type="button">9 900 Р</button>
+                  <button class="button product-button" type="button" aria-label="Добавить сайт компании Седона в корзину">9 900 Р</button>
                 </div>
               </div>
             </li>
@@ -166,7 +166,7 @@
                 <div class="product-list-item-description">
                   <h3 class="product-name-heading"><a class="product-name" href="#">Pink App</a></h3>
                   <p class="product-name-description-text">Продуктовый лендинг<br> приложения для iOS и Android</p>
-                  <button class="button product-button" type="button">9 900 Р</button>
+                  <button class="button product-button" type="button" aria-label="Добавить сайт компании Пинк в корзину">9 900 Р</button>
                 </div>
               </div>
             </li>
@@ -179,7 +179,7 @@
                 <div class="product-list-item-description">
                   <h3 class="product-name-heading"><a class="product-name" href="#">Barbershop</a></h3>
                   <p class="product-name-description-text">Сайт салона красоты.<br> Для мужчин, да.</p>
-                  <button class="button product-button" type="button">9 900 Р</button>
+                  <button class="button product-button" type="button" aria-label="Добавить сайт компании Барбершоп Бородинский в корзину">9 900 Р</button>
                 </div>
               </div>
             </li>
@@ -192,7 +192,7 @@
                 <div class="product-list-item-description">
                   <h3 class="product-name-heading"><a class="product-name" href="#">Mishka</a></h3>
                   <p class="product-name-description-text">Интернет-магазин<br> вязанных игрушек</p>
-                  <button class="button product-button" type="button">9 900 Р</button>
+                  <button class="button product-button" type="button" aria-label="Добавить сайт компании Мишка в корзину">9 900 Р</button>
                 </div>
               </div>
             </li>
@@ -205,7 +205,7 @@
                 <div class="product-list-item-description">
                   <h3 class="product-name-heading"><a class="product-name" href="#">A Plus</a></h3>
                   <p class="product-name-description-text">Лендинг курсов повышения<br> квалификации</p>
-                  <button class="button product-button" type="button">9 900 Р</button>
+                  <button class="button product-button" type="button" aria-label="Добавить сайт компании А-Плюс в корзину">9 900 Р</button>
                 </div>
               </div>
             </li>
@@ -218,7 +218,7 @@
                 <div class="product-list-item-description">
                   <h3 class="product-name-heading"><a class="product-name" href="#">Кваст</a></h3>
                   <p class="product-name-description-text">Промо-сайт производителя<br> крафтового кваса</p>
-                  <button class="button product-button" type="button">9 900 Р</button>
+                  <button class="button product-button" type="button" aria-label="Добавить сайт компании Кваст в корзину">9 900 Р</button>
                 </div>
               </div>
             </li>
@@ -305,7 +305,7 @@
     <h2 class="popup-heading">Напишите нам
       <button class="button-close" type="button">Закрыть</button>
     </h2>
-    <form class="popup-form" action="https://echo.htmlacademy.ru" method="post">
+    <form class="popup-form" action="https://echo.htmlacademy.ru" method="post" target="_blank">
       <p class="popup-item">
         <label class="label-name" for="firstname">Ваше имя:</label>
         <input class="pop-item-input popup-form-name" id="firstname" type="text" name="firstname"

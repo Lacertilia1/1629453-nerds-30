@@ -199,7 +199,6 @@ ______________________________________________________________________
   margin: 0;
   padding: 0;
 
-
   font-family: "Roboto", Open Sans, sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -741,6 +740,8 @@ img {
   margin-bottom: 16px;
   width: 300px;
   height: 146px;
+
+  object-fit: contain;
 }
 
 .features-name {
@@ -825,6 +826,8 @@ img {
   height: 208px;
 
   margin-bottom: 30px;
+
+  object-fit: contain;
 }
 
 .description-performance-title {
@@ -1576,7 +1579,7 @@ iframe {
   bottom: 0;
 
   width: 356px;
-  height: 231px;
+  min-height: 231px;
 
   text-align: center;
 

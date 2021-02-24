@@ -1,5 +1,7 @@
 /* Список мелких задач, которые нужно выполнить:
   ____________________________________________________________________
+
+  *Оптимизировать изображения в формате JPEG.
   ____________________________________________________________________
 
 */
@@ -30,6 +32,13 @@ ______________________________________________________________________
 
              - Изменить ширину макета с 1160px на 1200px,
                добавив отступы.
+______________________________________________________________________
+
+- 24.02.2021 - Добавил минифицированную версию CSS.
+               Изначальный вес: 28609 bytes.
+               Конечный вес: 19633 bytes.
+
+                                        Экономия: 8976 bytes (31.37%).
 ______________________________________________________________________
 
 */
@@ -1100,6 +1109,15 @@ iframe {
   box-shadow: 0px 20px 40px var(--modal-box-shadow);
 }
 
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .modal-button {
   position: absolute;
   left: 0;
@@ -1724,4 +1742,46 @@ iframe {
 .contacts-button,
 .modal-button {
   cursor: pointer;
+}
+
+/* Animations */
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-2000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }

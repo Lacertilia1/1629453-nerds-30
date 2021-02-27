@@ -1193,6 +1193,8 @@ iframe {
   border: 2px solid var(--basic-white-dark);
   border-radius: 3px;
 
+  color: var(--basic-black-dark);
+
   font: inherit;
   opacity: 0.5;
 }
@@ -1237,11 +1239,17 @@ iframe {
 .popup-item input:focus,
 .popup-form-text-input:focus {
   border: 2px solid var(--basic-black);
+
+  opacity: 1;
 }
 
 .popup-item input:invalid,
 .popup-form-text-input:invalid {
   border: 2px solid var(--basic-red-dark);
+
+  color: var(--basic-red-dark);
+
+  opacity: 1;
 }
 
 /* Catalog */

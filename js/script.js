@@ -106,6 +106,3 @@ for (let counter = 0; counter < btnSlide.length; counter++) {
   });
 }
 
-// Добавление нестандартного маркера на Google-карту.
-
-

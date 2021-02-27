@@ -105,4 +105,3 @@ for (let counter = 0; counter < btnSlide.length; counter++) {
     changeSlide(imageSlide, btnSlide, counter);
   });
 }
-

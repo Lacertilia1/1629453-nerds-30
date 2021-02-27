@@ -105,3 +105,56 @@ for (let counter = 0; counter < btnSlide.length; counter++) {
     changeSlide(imageSlide, btnSlide, counter);
   });
 }
+
+// Добавление маркера на интерактивную карту.
+
+// Данный маркер не смог реализовать.
+// При подключении маркер появлялся без проблем. Но, к сожалению, я не смог решить проблему при зуме страницы.
+// А именно - при зуме маркер уезжал в область Чечни и я ничего не смог этим поделать.
+
+// Единственное решение - отключить зум страницы с помощью колесика мыши **myMap.behaviors.disable('scrollZoom');**
+
+// Но там еще больше проблем возникло:
+// 1.) Не смог поместить блок с информацией поверх карты.
+// 2.) При уменьшении страницы все шло нормально, но когда я начинал увеличивать ее, то зум шел в левую часть страницы, а не посередине.
+
+// Код оставил только здесь. В минифицированной версии его нет. Оставил, на случай, если проверяющий человек подскажет решение.
+// С уважением, Павел!
+
+ymaps.ready(function () {
+  let myMap = new ymaps.Map('map', {
+  center: [59.939113, 30.321420],
+  zoom: 17
+  });
+  myMap.controls.remove('geolocationControl');
+  myMap.controls.remove('searchControl');
+  myMap.controls.remove('trafficControl');
+  myMap.controls.remove('typeSelector');
+  myMap.controls.remove('fullscreenControl');
+  myMap.controls.remove('rulerControl');
+  myMap.controls.remove('zoomControl');
+  myMap.behaviors.disable('scrollZoom');
+
+  // Создаём макет содержимого.
+  MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+    '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+  ),
+
+    myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+      hintContent: 'NЁRDS DESIGN STUDIO, 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8'
+    }, {
+      // Опции.
+      // Необходимо указать данный тип макета.
+      iconLayout: 'default#image',
+      // Своё изображение иконки метки.
+      iconImageHref: 'img/img-for-index/map-marker.png',
+      // Размеры метки.
+      iconImageSize: [231, 190],
+      // Смещение левого верхнего угла иконки относительно
+      // её "ножки" (точки привязки).
+      iconImageOffset: [110, -125]
+    });
+
+
+  myMap.geoObjects.add(myPlacemark);
+});

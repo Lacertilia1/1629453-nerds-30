@@ -4,9 +4,20 @@ const loginClose = document.querySelector(".button-close");
 const loginName = document.querySelector(".popup-form-name");
 const loginForm = document.querySelector(".popup-form");
 const loginEmail = document.querySelector(".popup-form-mail");
+const loginTextarea = document.querySelector(".popup-form-text-input");
+
+// Подключение формы. Форма появляется при нажатии на кнопку "Напишите нам".
+
+// Сделал форму более удобной.
+// Изначально в хранилище localStorage сохранялось только имя пользователя (Фокус появлялся на поле "Ваш email").
+
+// Итог:
+// 1.) Все поля формы обязательны для ввода. При отсутствии одного заполненного поля появляется анимация ошибки.
+// 2.) В хранилище сохраняются "Ваше имя" и "Ваш email" пользователя. При этом фокус идет на поле "Текст письма".
 
 let isStorageSupport = true;
-let storage = "";
+let storageName = localStorage.getItem("name");
+let storageEmail = localStorage.getItem("email");
 
 try {
   storage = localStorage.getItem("name");
@@ -19,13 +30,12 @@ loginLink.addEventListener("click", function (evt) {
   loginPopup.classList.add("modal-show");
 
   if (storage) {
-    loginName.value = storage;
-    loginEmail.focus();
+    loginName.value = storageName;
+    loginEmail.value = storageEmail;
+    loginTextarea.focus();
   } else {
     loginName.focus();
   }
-
-  loginName.focus();
 });
 
 loginClose.addEventListener("click", function (evt) {
@@ -35,7 +45,7 @@ loginClose.addEventListener("click", function (evt) {
 });
 
 loginForm.addEventListener("submit", function (evt) {
-  if (!loginName.value || !loginEmail.value) {
+  if (!loginName.value || !loginEmail.value || !loginTextarea.value) {
     evt.preventDefault();
     loginPopup.classList.remove("modal-error");
     loginPopup.offsetWidth = loginPopup.offsetWidth;
@@ -43,6 +53,7 @@ loginForm.addEventListener("submit", function (evt) {
   } else {
     if (isStorageSupport) {
       localStorage.setItem("name", loginName.value);
+      localStorage.setItem("email", loginEmail.value);
     }
   }
 });
@@ -56,3 +67,5 @@ window.addEventListener("keydown", function (evt) {
     }
   }
 });
+
+// Оживление слайдера. Слайдер меняется без анимации, мгновенно.

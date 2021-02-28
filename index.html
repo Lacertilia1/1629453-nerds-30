@@ -6,7 +6,7 @@
   <title>HTML Academy: Нёрдс</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="css/style.css">
 
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
@@ -226,9 +226,9 @@
       <h2 class="visually-hidden">Контактная информация</h2>
 
       <div class="contacts-map-frame">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003165!2d30.320858716173472!3d59.938719169054075!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1613329675039!5m2!1sru!2sru"
-          height="416" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        <div id="map">
+          <!-- Здесь находится карта -->
+        </div>
         <div class="main-footer-contacts-adress">
           <p class="footer-contacts-subtitle">Nёrds design studio</p>
           <p class="footer-contacts-adress">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
@@ -302,7 +302,9 @@
     </form>
   </section>
 
-  <script src="js/script.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=23a546b3-b588-4e34-b2a7-1017ad34c8c3&lang=ru_RU"
+    type="text/javascript"></script>
+  <script src="js/script.js"></script>
 
 </body>
 

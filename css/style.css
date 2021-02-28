@@ -961,14 +961,16 @@ img {
 
 .main-footer-contacts-adress {
   position: absolute;
-  left: 372px;
-  top: 52px;
+  left: 251px;
+  top: 51px;
 
   width: 219px;
   height: 212px;
   padding: 49px 50px 47px 50px;
 
   background-color: var(--basic-white);
+
+  z-index: 999999;
 }
 
 .footer-contacts-phone {
@@ -990,8 +992,6 @@ img {
   display: flex;
 
   height: 81px;
-
-  margin-bottom: 68px;
 }
 
 .footer-contacts-adress,
@@ -1022,23 +1022,27 @@ img {
 .contacts-map-frame {
   position: relative;
 
-  width: 100%;
-  height: 416px;
-
-  margin-bottom: 68px;
-
   background-color: var(--map-background);
 }
 
 /* Map */
 
 #map {
+  position: absolute;
+
   width: 100%;
   height: 416px;
+
   border: none;
 }
 
 /* Socials */
+
+.main-footer-socials {
+  position: relative;
+  top: 484px;
+  padding-bottom: 68px;
+}
 
 .social-icons {
   display: flex;

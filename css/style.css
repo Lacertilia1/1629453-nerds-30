@@ -75,6 +75,7 @@ ______________________________________________________________________
   --modal-box-shadow: rgba(0, 0, 0, 0.4);
   --toggle-shadow: rgba(0, 0, 0, 0.15);
   --catalog-image-border: rgba(0, 0, 0, 0.1);
+  --catalog-shadow: rgba(0, 0, 0, 0.25);
 
   /* Catalog-product background */
 
@@ -1616,6 +1617,11 @@ img {
 }
 
 .catalog-image-wrapper:hover .product-list-item-decoration {
+  opacity: 1;
+}
+
+.catalog-image-wrapper:hover {
+  filter: drop-shadow(0px 6px 15px var(--catalog-shadow));
   opacity: 1;
 }
 

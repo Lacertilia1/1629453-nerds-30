@@ -10,7 +10,7 @@ ______________________________________________________________________
 
              - Все кнопки полностью переделаны. Вместо тэга <button>
                использовал в большинстве случаев тэг <a>.
-               Эффекты из стайлгайда работают.
+               Эффекты из стайл-гайда работают.
 ______________________________________________________________________
 
 - 14.02.2021 - Стилизовал модальное окно.
@@ -134,7 +134,7 @@ ______________________________________________________________________
   margin: 0;
   padding: 0;
 
-  font-family: "Roboto", Open Sans, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -645,7 +645,7 @@ img {
   box-shadow: inset 0px 3px 0px var(--button-active);
 }
 
-/* <hr> stilization */
+/* <hr> stylization */
 
 .line-between-sections {
   width: 1160px;
@@ -879,6 +879,7 @@ img {
 .fourth-partner-image {
   margin-top: 3px;
 }
+
 /* Footer */
 
 .footer-contacts-subtitle {
@@ -888,7 +889,7 @@ img {
   text-transform: uppercase;
 }
 
-.main-footer-contacts-adress {
+.main-footer-contacts-address {
   position: absolute;
   left: 372px;
   top: 51px;
@@ -923,7 +924,7 @@ img {
   height: 81px;
 }
 
-.footer-contacts-adress,
+.footer-contacts-address,
 .contacts-phone {
   color: var(--basic-black-light);
 }
@@ -956,7 +957,7 @@ img {
 
 /* Map */
 
-.map-stilization {
+.map-stylization {
   position: absolute;
 
   width: 100%;
@@ -1463,7 +1464,7 @@ img {
 
 /* Catalog */
 
-.catalog-sortbuttons-wrapper {
+.catalog-sort-wrapper {
   display: flex;
   justify-content: space-between;
 }
@@ -1585,7 +1586,7 @@ img {
   margin-right: 0;
 }
 
-/* Данное свойство убирает нужний отступ у последних двух элементов списка в каталоге. Работает при переполнении. */
+/* Данное свойство убирает нижний отступ у последних двух элементов списка в каталоге. Работает при переполнении. */
 .product-list-item:nth-last-child(-n + 2) {
   margin-bottom: 0;
 }
@@ -1644,7 +1645,8 @@ img {
   opacity: 0.3;
 }
 
-/* Paginatation */
+/* Pagination */
+
 .pagination-list {
   display: flex;
   justify-content: space-between;

@@ -109,36 +109,36 @@ for (let counter = 0; counter < btnSlide.length; counter++) {
 // Добавление маркера на интерактивную карту.
 
 ymaps.ready(function () {
-  let myMap = new ymaps.Map('map', {
-  center: [59.939113, 30.321420],
-  zoom: 17
+  let myMap = new ymaps.Map("map", {
+    center: [59.939113, 30.321420],
+    zoom: 17
   });
-  myMap.controls.remove('geolocationControl');
-  myMap.controls.remove('searchControl');
-  myMap.controls.remove('trafficControl');
-  myMap.controls.remove('typeSelector');
-  myMap.controls.remove('fullscreenControl');
-  myMap.controls.remove('rulerControl');
-  myMap.controls.remove('zoomControl');
+  myMap.controls.remove("geolocationControl");
+  myMap.controls.remove("searchControl");
+  myMap.controls.remove("trafficControl");
+  myMap.controls.remove("typeSelector");
+  myMap.controls.remove("fullscreenControl");
+  myMap.controls.remove("rulerControl");
+  myMap.controls.remove("zoomControl");
 
   // Данный пункт отключает зум карты с помощью колесика мыши. Проблема в том, что, при увеличении
   //            или уменьшении карты, маркер не фиксировался на месте, и уезжал с нужной мне точки.
   // Стандартный маркер фиксировался нормально, и проблем с зумом не было.
-  myMap.behaviors.disable('scrollZoom');
+  myMap.behaviors.disable("scrollZoom");
 
   // Создаём макет содержимого.
   MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
-    '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+    <div style="color: #ffffff; font-weight: bold;">$[properties.iconContent]</div>
   ),
 
     myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
-      hintContent: 'NЁRDS DESIGN STUDIO, 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8'
+      hintContent: "NЁRDS DESIGN STUDIO, 191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"
     }, {
       // Опции.
       // Необходимо указать данный тип макета.
-      iconLayout: 'default#image',
+      iconLayout: "default#image",
       // Своё изображение иконки метки.
-      iconImageHref: 'img/img-for-index/map-marker.png',
+      iconImageHref: "img/img-for-index/map-marker.png",
       // Размеры метки.
       iconImageSize: [231, 190],
       // Смещение левого верхнего угла иконки относительно

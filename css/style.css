@@ -78,6 +78,8 @@ ______________________________________________________________________
   --toggle-shadow: rgba(0, 0, 0, 0.15);
   --catalog-image-border: rgba(0, 0, 0, 0.1);
   --catalog-shadow: rgba(0, 0, 0, 0.25);
+  --button-active-opacity: rgba(255,255,255, 0.3);
+  --catalog-button-active-opacity: rgba(0, 0, 0, 0.5);
 
   /* Catalog-product background */
 
@@ -349,6 +351,7 @@ img {
 
 .index-link:active {
   background-color: var(--basic-red-extra-dark);
+  color: var(--button-active-opacity);
 
   box-shadow: inset 0px 3px 0px var(--button-active);
 }
@@ -377,9 +380,9 @@ img {
   background-color: var(--basic-yellow-extra-dark);
 }
 
-.index-link:active .link-text {
+/* .index-link:active .link-text {
   opacity: 0.3;
-}
+} */
 /* Main navigation */
 
 .main-navigation {
@@ -1640,9 +1643,9 @@ img {
   box-shadow: inset 0px 3px 0px var(--button-active);
 }
 
-.filter-button:active .catalog-active-opacity-button,
-.catalog-pagination-link:active .catalog-active-opacity-button {
-  opacity: 0.3;
+.filter-button:active,
+.catalog-pagination-link:active {
+  color: var(--catalog-button-active-opacity);
 }
 
 /* Pagination */

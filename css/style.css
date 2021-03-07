@@ -604,8 +604,6 @@ img {
   border: none;
   border-radius: 50%;
 
-  outline: none;
-
   cursor: pointer;
 }
 
@@ -624,12 +622,6 @@ img {
 
   border: 2px solid var(--slider);
   border-radius: 50%;
-}
-
-.button,
-.button:active,
-.button:focus {
-  outline: none;
 }
 
 .slider-slogan {
@@ -887,6 +879,11 @@ img {
   opacity: 1;
 }
 
+.partners-image-link:focus .partners-item-image {
+  outline: 2px solid var(--basic-black);
+  opacity: 1;
+}
+
 .partners-item-image:active {
   opacity: 0.1;
 }
@@ -1091,6 +1088,8 @@ img {
   box-sizing: border-box;
 
   margin: 0;
+  padding-top: 12px;
+  padding-bottom: 12px;
   padding-left: 84px;
   padding-right: 84px;
 }
@@ -1184,12 +1183,6 @@ img {
 
 .button-close:active {
   opacity: 0.1;
-}
-
-.button-close,
-.button-close:hover,
-.button-close:active {
-  outline: none;
 }
 
 .pop-item-input:hover,
@@ -1478,7 +1471,6 @@ input[type="number"]:focus {
   padding: 0;
 
   vertical-align: top;
-  outline: none;
 
   background: url(../img/img-for-catalog/checkbox-off.svg) 0 0 no-repeat;
 
@@ -1543,7 +1535,6 @@ input[type="number"]:focus {
   padding: 0;
 
   font-size: 14px;
-  outline: none;
 
   border: 0;
 

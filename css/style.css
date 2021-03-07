@@ -1329,12 +1329,15 @@ img {
   background: url(../img/img-for-catalog/radio-on.svg) 0 0 no-repeat;
 }
 
-.catalog-radio-type label:hover:before {
-  opacity: 1;
+.product-filter-radio-button[type="radio"]:disabled + label,
+.product-filter-radio-button[type="radio"]:disabled + label:before {
+  opacity: 0.3;
+
+  cursor: default;
 }
 
-.product-filter-radio-button[type="radio"]:disabled + label:before {
-  opacity: 0.1;
+.catalog-radio-type label:hover:before {
+  opacity: 1;
 }
 
 /* Filter Range Input */
@@ -1422,12 +1425,12 @@ img {
 }
 /* Filter-checkbox */
 
-.checkbox-other {
+/* .checkbox-other {
   display: block;
   margin: 0 0 10px 0;
-}
+} */
 
-.checkbox-other input[type="checkbox"] {
+.product-filter-radio-checkbox[type="checkbox"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   display: inline-block;
@@ -1441,27 +1444,33 @@ img {
 
   background: url(../img/img-for-catalog/checkbox-off.svg) 0 0 no-repeat;
 
-  transition: background 0.3s ease;
-
   opacity: 0.4;
 
   cursor: pointer;
 }
 
-.checkbox-other input[type="checkbox"]:checked {
+.product-filter-radio-checkbox[type="checkbox"]:checked {
   background-image: url(../img/img-for-catalog/checkbox-on.svg);
 }
 
-.checkbox-other input[type="checkbox"]:hover {
+.product-filter-radio-checkbox[type="checkbox"]:hover {
   opacity: 1;
 }
 
-.checkbox-other input[type="checkbox"]:active {
+.product-filter-radio-checkbox[type="checkbox"]:active {
   opacity: 1;
 }
 
-.checkbox-other input[type="checkbox"]:disabled {
+.product-filter-radio-checkbox[type="checkbox"]:disabled {
   opacity: 0.1;
+
+  cursor: default;
+}
+
+.product-filter-radio-checkbox[type="checkbox"]:disabled + label {
+  opacity: 0.3;
+
+  cursor: default;
 }
 
 /* Catalog */

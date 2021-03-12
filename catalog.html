@@ -9,7 +9,7 @@
   <title>HTML Academy: Нёрдс</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicon/icon.svg" type="image/svg+xml">
@@ -75,17 +75,18 @@
             <legend class="product-filter-cost-legend">Сетка:</legend>
             <ul class="radio-buttons-description-text">
               <li class="catalog-radio-type">
-                <input class="product-filter-radio-button" type="radio" name="product-type" value="adaptive"
-                  id="filter-adaptive" checked>
+                <input class="visually-hidden product-filter-radio-button" type="radio" name="product-type"
+                  value="adaptive" id="filter-adaptive" checked>
                 <label for="filter-adaptive">Адаптивная</label>
               </li>
               <li class="catalog-radio-type">
-                <input class="product-filter-radio-button" type="radio" name="product-type" value="fix" id="filter-fix">
+                <input class="visually-hidden product-filter-radio-button" type="radio" name="product-type" value="fix"
+                  id="filter-fix">
                 <label for="filter-fix">Фиксированная</label>
               </li>
               <li class="catalog-radio-type">
-                <input class="product-filter-radio-button" type="radio" name="product-type" value="rubber"
-                  id="filter-rubber">
+                <input class="visually-hidden product-filter-radio-button" type="radio" name="product-type"
+                  value="rubber" id="filter-rubber">
                 <label for="filter-rubber">Резиновая</label>
               </li>
             </ul>
@@ -251,6 +252,24 @@
       <div class="contacts-map-frame">
         <div id="map" class="map-stylization">
           <!-- Здесь находится карта -->
+
+          <!--
+            Изображение карты, которое будет расположено на месте интерактивной карты, при отсутствии js.
+
+            Карта в Фигме имеет размеры (1440px на 416px). При растягивании изображения до 1920px , она
+            становилась размытой.
+
+            Я создал изображение в CC Photoshop размером (1920px на 416px) и добавил туда Print Screen с
+            Яндекса.
+
+            При просмотре на мониторе шириной 1920px изображение упирается в края монитора. При уменьшении масштаба
+            на странице, оно имеет статичный размер.
+          -->
+          <div class="contacts-map--image-container">
+            <img class="contacts-map--image" src="img/img-for-index/map--background-image.jpg" width="1920" height="416"
+              alt="Изображение карты с маркером компании NЁRDS.">
+          </div>
+
           <div class="container">
             <div class="main-footer-contacts-address">
               <p class="footer-contacts-subtitle">Nёrds design studio</p>
@@ -330,8 +349,8 @@
     </form>
   </section>
 
-  <!-- <script src="https://api-maps.yandex.ru/2.1/?apikey=23a546b3-b588-4e34-b2a7-1017ad34c8c3&lang=ru_RU"
-    type="text/javascript"></script> -->
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=23a546b3-b588-4e34-b2a7-1017ad34c8c3&lang=ru_RU"
+    type="text/javascript"></script>
   <script src="js/script.min.js"></script>
 
 </body>

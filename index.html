@@ -219,6 +219,24 @@
       <div class="contacts-map-frame">
         <div id="map" class="map-stylization">
           <!-- Здесь находится карта -->
+
+          <!--
+            Изображение карты, которое будет расположено на месте интерактивной карты, при отсутствии js.
+
+            Карта в Фигме имеет размеры (1440px на 416px). При растягивании изображения до 1920px , она
+            становилась размытой.
+
+            Я создал изображение в CC Photoshop размером (1920px на 416px) и добавил туда Print Screen с
+            Яндекса.
+
+            При просмотре на мониторе шириной 1920px изображение упирается в края монитора. При уменьшении масштаба
+            на странице, оно имеет статичный размер.
+          -->
+          <div class="contacts-map--image-container">
+            <img class="contacts-map--image" src="img/img-for-index/map--background-image.jpg" width="1920" height="416"
+              alt="Изображение карты с маркером компании NЁRDS.">
+          </div>
+
           <div class="container">
             <div class="main-footer-contacts-address">
               <p class="footer-contacts-subtitle">Nёrds design studio</p>

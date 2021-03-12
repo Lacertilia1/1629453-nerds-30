@@ -991,11 +991,15 @@ img {
   min-height: 416px;
 
   border: none;
-
-  background-image: url(../img/img-for-index/map-image.png);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
+
+.contacts-map--image-container {
+  position: absolute;
+
+  width: 1920px;
+  margin: 0 auto;
+}
+
 /* Socials */
 
 .main-footer-socials {

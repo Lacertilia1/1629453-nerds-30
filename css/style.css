@@ -296,8 +296,6 @@ img {
 
 .page {
   height: 100%;
-
-  overflow-x:hidden;
 }
 
 .container {
@@ -986,8 +984,13 @@ img {
 .contacts-map--image-container {
   position: absolute;
 
-  width: 1920px;
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
   margin: 0 auto;
+
+  text-align: center;
 }
 
 /* Socials */

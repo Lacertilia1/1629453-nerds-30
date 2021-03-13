@@ -81,15 +81,6 @@ ______________________________________________________________________
   --button-active-opacity: rgba(255, 255, 255, 0.3);
   --catalog-button-active-opacity: rgba(0, 0, 0, 0.5);
 
-  /* Catalog-product background */
-
-  --sedona: #4c80ab;
-  --pink: #26333e;
-  --borodinski: #0a0a0a;
-  --mishka: #57c3b3;
-  --a-plus: #6551d6;
-  --kvast: #5e390a;
-
   /* Shades of white */
 
   --basic-white: #ffffff;
@@ -97,7 +88,7 @@ ______________________________________________________________________
   --basic-white-neutral: #eeeeee;
   --basic-white-light: #dbdbdb;
   --basic-white-extra-light: #e1e1e1;
-  --range-unput: #d7dcdf;
+  --range-input: #d7dcdf;
 
   /* Shades of black */
 
@@ -257,7 +248,7 @@ img {
 .catalog-sort-button,
 .catalog-button,
 .label-name,
-.footer-contacts-adress,
+.footer-contacts-address,
 .contacts-phone,
 .performance-table-text-item,
 .button {
@@ -305,6 +296,8 @@ img {
 
 .page {
   height: 100%;
+
+  overflow-x:hidden;
 }
 
 .container {
@@ -380,9 +373,6 @@ img {
   background-color: var(--basic-yellow-extra-dark);
 }
 
-/* .index-link:active .link-text {
-  opacity: 0.3;
-} */
 /* Main navigation */
 
 .main-navigation {
@@ -1315,8 +1305,8 @@ img {
 
 /* Данное свойство убирает кастомные стрелки в Google Chrome при наведении курсора на input */
 
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
+.price-controls--input-number::-webkit-outer-spin-button,
+.price-controls--input-number::-webkit-inner-spin-button {
   -webkit-appearance: none;
           appearance: none;
 
@@ -1325,12 +1315,12 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* Данное свойство убирает кастомные стрелки в Mozilla Firefox */
 
-input[type="number"] {
+.price-controls--input-number {
   -moz-appearance: textfield;
        appearance: textfield;
 }
-input[type="number"]:hover,
-input[type="number"]:focus {
+.price-controls--input-number:hover,
+.price-controls--input-number:focus {
   -moz-appearance: number-input;
        appearance: number-input;
 }
@@ -1410,7 +1400,7 @@ input[type="number"]:focus {
 
 .range-controls .scale {
   height: 2px;
-  background: var(--range-unput);
+  background: var(--range-input);
 }
 
 .range-controls .bar {
